@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>在线课程</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <link rel="stylesheet" href="../static/dist/lib/weui.min.css">
+    <link rel="stylesheet" href="../static/dist/css/jquery-weui.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/iconfont.css">
+
+</head>
+<body ontouchstart>
+<div class="wx-container">
+    <div class="wx-header weui-flex mgBt_none">
+        <div class="weui-flex__item">
+            <a href="" class="returnBtn">
+                <span class="iconfont icon-xiangzuo"></span>
+                返回
+            </a>
+        </div>
+        <div class="weui-flex__item header-title">在线课程</div>
+        <div class="weui-flex__item"></div>
+    </div>
+    <div class="wx-content">
+        <div class="weui-search-bar" id="searchBar">
+            <form class="weui-search-bar__form">
+                <div class="weui-search-bar__box">
+                    <div class="inputArea">
+                        <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="" required="">
+                        <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+                    </div>
+                    <div class="buttonArea">
+                        <button class="searchBtn">
+                            <i class="weui-icon-search"></i>
+                            <span class="searchText">搜索</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="result_box">
+            <ul class="result-content">
+                <!--需要付费的vip视频，在这一项li上class加vip-->
+                <!--而免费的视频，在这一li的class加free-->
+                <li class="result-item vip video-item">
+                    <a href="pay.html">
+                        <div class="item-imgBox">
+                            <img src="../static/images/video1.png" alt="">
+                            <span class="vip_icon">VIP</span>
+                            <span class="video_timeLength">01:23:45</span>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="video-title">企业重组上市的税务安排</h2>
+                            <p class="video-ps">
+                                <span class="video-item-price">￥299.00</span>
+                                <span class="video-item-xxNum"><span>35</span>人已学习</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="result-item free video-item">
+                    <a href="onlineCl_detail.html">
+                        <div class="item-imgBox">
+                            <img src="../static/images/video2.png" alt="">
+                            <!--<span class="vip_icon">VIP</span>-->
+                            <span class="video_timeLength">01:23:45</span>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="video-title">建议制定社会信用法 推进信用 信息共享</h2>
+                            <p class="video-ps">
+                                <span class="video-item-price">免费</span>
+                                <span class="video-item-xxNum"><span>35</span>人已学习</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="result-item free video-item">
+                    <a href="onlineCl_detail.html">
+                        <div class="item-imgBox">
+                            <img src="../static/images/video3.png" alt="">
+                            <!--<span class="vip_icon">VIP</span>-->
+                            <span class="video_timeLength">01:23:45</span>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="video-title">建议制定社会信用法 推进信用 信息共享</h2>
+                            <p class="video-ps">
+                                <span class="video-item-price">免费</span>
+                                <span class="video-item-xxNum"><span>35</span>人已学习</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="result-item vip video-item">
+                    <a href="onlineCl_detail.html">
+                        <div class="item-imgBox">
+                            <img src="../static/images/video1.png" alt="">
+                            <span class="vip_icon">VIP</span>
+                            <span class="video_timeLength">01:23:45</span>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="video-title">企业重组上市的税务安排</h2>
+                            <p class="video-ps">
+                                <span class="video-item-price">￥299.00</span>
+                                <span class="video-item-xxNum"><span>35</span>人已学习</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="result-item free video-item">
+                    <a href="onlineCl_detail.html">
+                        <div class="item-imgBox">
+                            <img src="../static/images/video2.png" alt="">
+                            <!--<span class="vip_icon">VIP</span>-->
+                            <span class="video_timeLength">01:23:45</span>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="video-title">建议制定社会信用法 推进信用 信息共享</h2>
+                            <p class="video-ps">
+                                <span class="video-item-price">免费</span>
+                                <span class="video-item-xxNum"><span>35</span>人已学习</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="result-item free video-item">
+                    <a href="onlineCl_detail.html">
+                        <div class="item-imgBox">
+                            <img src="../static/images/video3.png" alt="">
+                            <!--<span class="vip_icon">VIP</span>-->
+                            <span class="video_timeLength">01:23:45</span>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="video-title">建议制定社会信用法 推进信用 信息共享</h2>
+                            <p class="video-ps">
+                                <span class="video-item-price">免费</span>
+                                <span class="video-item-xxNum"><span>35</span>人已学习</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="result-item vip video-item">
+                    <a href="onlineCl_detail.html">
+                        <div class="item-imgBox">
+                            <img src="../static/images/video1.png" alt="">
+                            <span class="vip_icon">VIP</span>
+                            <span class="video_timeLength">01:23:45</span>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="video-title">企业重组上市的税务安排</h2>
+                            <p class="video-ps">
+                                <span class="video-item-price">￥299.00</span>
+                                <span class="video-item-xxNum"><span>35</span>人已学习</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="result-item free video-item">
+                    <a href="onlineCl_detail.html">
+                        <div class="item-imgBox">
+                            <img src="../static/images/video2.png" alt="">
+                            <!--<span class="vip_icon">VIP</span>-->
+                            <span class="video_timeLength">01:23:45</span>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="video-title">建议制定社会信用法 推进信用 信息共享</h2>
+                            <p class="video-ps">
+                                <span class="video-item-price">免费</span>
+                                <span class="video-item-xxNum"><span>35</span>人已学习</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="result-item free video-item">
+                    <a href="onlineCl_detail.html">
+                        <div class="item-imgBox">
+                            <img src="../static/images/video3.png" alt="">
+                            <!--<span class="vip_icon">VIP</span>-->
+                            <span class="video_timeLength">01:23:45</span>
+                        </div>
+                        <div class="item-desc">
+                            <h2 class="video-title">建议制定社会信用法 推进信用 信息共享</h2>
+                            <p class="video-ps">
+                                <span class="video-item-price">免费</span>
+                                <span class="video-item-xxNum"><span>35</span>人已学习</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="weui-loadmore">
+                <i class="weui-loading"></i>
+                <span class="weui-loadmore__tips">正在加载</span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../static/dist/lib/jquery-2.1.4.js"></script>
+<script src="../static/dist/lib/fastclick.js"></script>
+<script src="../static/dist/js/jquery-weui.js"></script>
+<script>
+    $(function() {
+        FastClick.attach(document.body);
+        if(parseInt($('.wx-container').css('height'))>$('body').height()){
+
+        }
+    });
+    // $(document.body).infinite();
+    var loading = false;  //状态标记
+    $(document.body).infinite().on("infinite", function() {
+        if(loading) return;
+        loading = true;
+        var moreContent='<li class="result-item vip video-item">\n' +
+            '                    <a href="onlineCl_detail.html">\n' +
+            '                        <div class="item-imgBox">\n' +
+            '                            <img src="../static/images/video1.png" alt="">\n' +
+            '                            <span class="vip_icon">VIP</span>\n' +
+            '                            <span class="video_timeLength">01:23:45</span>\n' +
+            '                        </div>\n' +
+            '                        <div class="item-desc">\n' +
+            '                            <h2 class="video-title">企业重组上市的税务安排</h2>\n' +
+            '                            <p class="video-ps">\n' +
+            '                                <span class="video-item-price">￥299.00</span>\n' +
+            '                                <span class="video-item-xxNum"><span>35</span>人已学习</span>\n' +
+            '                            </p>\n' +
+            '                        </div>\n' +
+            '                    </a>\n' +
+            '                </li>\n' +
+            '                <li class="result-item free video-item">\n' +
+            '                    <a href="onlineCl_detail.html">\n' +
+            '                        <div class="item-imgBox">\n' +
+            '                            <img src="../static/images/video2.png" alt="">\n' +
+            '                            <!--<span class="vip_icon">VIP</span>-->\n' +
+            '                            <span class="video_timeLength">01:23:45</span>\n' +
+            '                        </div>\n' +
+            '                        <div class="item-desc">\n' +
+            '                            <h2 class="video-title">建议制定社会信用法 推进信用 信息共享</h2>\n' +
+            '                            <p class="video-ps">\n' +
+            '                                <span class="video-item-price">免费</span>\n' +
+            '                                <span class="video-item-xxNum"><span>35</span>人已学习</span>\n' +
+            '                            </p>\n' +
+            '                        </div>\n' +
+            '                    </a>\n' +
+            '                </li>\n' +
+            '                <li class="result-item free video-item">\n' +
+            '                    <a href="onlineCl_detail.html">\n' +
+            '                        <div class="item-imgBox">\n' +
+            '                            <img src="../static/images/video3.png" alt="">\n' +
+            '                            <!--<span class="vip_icon">VIP</span>-->\n' +
+            '                            <span class="video_timeLength">01:23:45</span>\n' +
+            '                        </div>\n' +
+            '                        <div class="item-desc">\n' +
+            '                            <h2 class="video-title">建议制定社会信用法 推进信用 信息共享</h2>\n' +
+            '                            <p class="video-ps">\n' +
+            '                                <span class="video-item-price">免费</span>\n' +
+            '                                <span class="video-item-xxNum"><span>35</span>人已学习</span>\n' +
+            '                            </p>\n' +
+            '                        </div>\n' +
+            '                    </a>\n' +
+            '                </li>';
+        setTimeout(function() {
+            $(".result-content").append(moreContent);
+            loading = false;
+            //  如果你不需要滚动加载了，比如已经加载完了所有内容，调用 $(document.body).destroyInfinite() 可以销毁插件。
+        }, 500);   //模拟延迟
+    });
+</script>
+
+</body>
+
+</html>

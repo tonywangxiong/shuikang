@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta charset="UTF-8">
+    <title>找回账号</title>
+    <script src="../static/js/jquery-1.11.2.min.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/btn.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <script src="../static/js/bootstrap.js"></script>
+    <script src="../static/js/DD_roundies_0.0.2a-min.js"></script>
+</head>
+<body style="position: relative">
+<div class="sk-container">
+    <div class="header row header-reg">
+        <div class="col-xs-5">
+            <a href="../index.html"><div class="sk-logo"></div></a>
+        </div>
+        <div class="personal-menu col-xs-7">
+            <ul>
+                <li class="reg-title">找回账号</li>
+                <li class="login-menu1">
+                    <span>已有账号?</span>
+                    <a href="login.html">
+                        请登录
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+    <div class="reg-content">
+        <form action="#">
+            <!--手机号码-->
+            <div class="form-item">
+                <label for="cellPhone_num">手机号码</label>
+                <input type="text" name="cellPhone_num" id="cellPhone_num" placeholder="请输入手机号">
+                <p class="error-msg"></p>
+            </div>
+            <!--手机号码结束-->
+            <!--图形验证码-->
+            <div class="form-item">
+                <label for="imgVali">图形验证码</label>
+                <input type="text" name="confirmPsw" id="imgVali" class="imgVali1" placeholder="">
+                <img src="../static/images/valiImg.png" alt="" class="valiImg" id="valiImg">
+                <p class="error-msg"></p>
+            </div>
+            <!--图形验证码结束-->
+            <!--手机验证-->
+            <div class="form-item">
+                <label for="phone_vali">手机验证码</label>
+                <input type="text" name="phone_vali" id="phone_vali" class="phone_vali1" placeholder="请输入手机号">
+                <button class="getValiBtn disabled" disabled   >获取验证码</button>
+                <p class="error-msg"></p>
+            </div>
+            <!--手机验证结束-->
+            <div class="error-msg1">
+                <span class="warning_icon"></span>
+                <span class="error-text">账号或密码输入错误，请重新输入。</span>
+            </div>
+
+            <div class="form-item submitPart">
+                <button class="submitBtn">确定</button>
+            </div>
+        </form>
+    </div>
+    <div class="footer footer-white">版权所有  Copyright      2018广东税康财税科技有限公司</div>
+</div>
+</body>
+</html>

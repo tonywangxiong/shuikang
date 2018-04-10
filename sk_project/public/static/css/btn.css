@@ -1,0 +1,225 @@
+.icon{
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+}
+.icon_sm{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+.login-icon{
+    background: url('../images/icon/login_icon.png');
+}
+.login-menu a:hover .login-icon{
+    background: url('../images/icon/login_icon_hover.png');
+}
+.reg-icon{
+    background: url('../images/icon/reg_icon.png');
+}
+.quit-icon{
+    background: url('../images/icon/quit_icon.png');
+}
+.quit-menu a:hover .quit-icon{
+    background: url('../images/icon/quit_icon_hover.png');
+}
+.reg-menu a:hover .reg-icon{
+    background: url('../images/icon/reg_icon_hover.png');
+}
+.persn-icon{
+    background: url('../images/icon/persn_icon.png');
+}
+.persn-menu a:hover .persn-icon{
+    background: url('../images/icon/persn_icon_hover.png');
+}
+.search_icon{
+    background: url('../images/icon/search_icon_blue.png');
+}
+.searchBtn:hover .search_icon{
+    background: url('../images/icon/search_icon_white.png');
+}
+.search_icon_white{
+    background: url('../images/icon/search_icon_white.png');
+}
+.searchBtn:hover span{
+    color:white;
+}
+.searchBtn:hover{
+    background-color: #0674c3;
+}
+.viewNum_icon{
+    display: inline-block;
+    width: 16px;
+    height: 11px;
+    background: url('../images/icon/viewNum_icon.png');
+}
+.viewNum:hover{
+    text-decoration: none;
+    color:#333333;
+}
+.hot_icon{
+    display: inline-block;
+    width: 25px;
+    height: 16px;
+    vertical-align:bottom;
+    background: url('../images/icon/hot_icon.png');
+}
+.hot_icon_white{
+    display: inline-block;
+    width: 14px;
+    height: 16px;
+    background: url('../images/icon/hot_icon_white.png');
+}
+.lf-title:hover{
+    text-decoration: none;
+    color: #039bda;
+}
+.regster_icon{
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    background: url("../images/icon/regster_icon.jpg") no-repeat;
+}
+.error-msg1 .warning_icon{
+    background: url("../images/icon/warning_icon.jpg") no-repeat;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: 14px;
+    float:left;
+}
+.free_icon{
+    width: 36px;
+    height: 16px;
+    display: inline-block;
+    background:url("../images/icon/free_icon.png") no-repeat;
+}
+.price_bg{
+    display: inline-block;
+    width: 60px;
+    height: 16px;
+    line-height: 16px;
+    background:url("../images/icon/price_bg.png") no-repeat;
+    font-size: 12px;
+    text-align: center;
+    color:#ffffff!important;
+}
+.vip_icon{
+    display: inline-block;
+    position: absolute;
+    width: 29px;
+    height: 14px;
+    top:8px;
+    left:8px;
+    background:url("../images/icon/vip_icon.png") no-repeat;
+}
+.weixin_icon{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background:url("../images/icon/weixin_icon.png") no-repeat;
+    margin-top: 7px;
+}
+.zhifubao_icon{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background:url("../images/icon/zhifubao_icon.png") no-repeat;
+    margin-top: 7px;
+}
+.persn_icon_white{
+    display: inline-block;
+    width: 20px;
+    height: 19px;
+    background:url("../images/icon/persn_icon_white.png") no-repeat;
+}
+.newBtn_icon{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background:url("../images/icon/newBtn_icon_blue.png") no-repeat;
+}
+.treeMenu_icon{
+    display: inline-block;
+    width: 8px;
+    height: 9px;
+    background:url("../images/icon/down_icon_gray.png") no-repeat;
+}
+.treeMenu_icon:hover{
+    display: inline-block;
+    width: 8px;
+    height: 9px;
+    background:url("../images/icon/down_icon_blue.png") no-repeat;
+}
+.treeMenu_icon_close{
+    display: inline-block;
+    width: 8px;
+    height: 9px;
+    background:url("../images/icon/up_icon_gray.png") no-repeat;
+}
+.treeMenu_icon_close:hover{
+    display: inline-block;
+    width: 8px;
+    height: 9px;
+    background:url("../images/icon/up_icon_blue.png") no-repeat;
+}
+.download_icon{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background:url("../images/icon/download_icon_blue.png") no-repeat;
+    vertical-align: middle;
+}
+.download_icon:hover{
+    background:url("../images/icon/download_icon_navy.png") no-repeat;
+}
+.del_icon{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background:url("../images/icon/del_icon_red.png") no-repeat;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.del_icon:hover{
+    background:url("../images/icon/del_icon_orange.png") no-repeat;
+}
+.question_icon{
+    display: inline-block;
+    width: 24px;
+    height: 19px;
+    background:url("../images/icon/question_icon.png") no-repeat;
+    float:left;
+    margin-top: 3px;
+}
+._search_area1>.searchBtn1:hover .search_icon{
+    background:url("../images/icon/search_icon_white.png") no-repeat;
+}
+._search_area1>.iwanna-ask:hover .askBtn_icon{
+    background:url("../images/icon/askBtn_icon_white.png") no-repeat;
+}
+.askBtn_icon{
+    background: url('../images/icon/askBtn_icon_blue.png') no-repeat;
+}
+.question_icon{
+    width: 17px;
+    height: 16px;
+    display: inline-block;
+    background: url('../images/icon/question_icon_navy.png') no-repeat;
+    float: left;
+
+}
+.normal-icon{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: url('../images/icon/normal_icon.png') no-repeat;
+    vertical-align: middle;
+}
+.error-icon{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: url('../images/icon/error_icon.png') no-repeat;
+    vertical-align: middle;
+}

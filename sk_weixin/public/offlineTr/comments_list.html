@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>评论列表</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <link rel="stylesheet" href="../static/dist/lib/weui.min.css">
+    <link rel="stylesheet" href="../static/dist/css/jquery-weui.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/iconfont.css">
+
+</head>
+<body ontouchstart>
+<div class="wx-container">
+    <div class="wx-header weui-flex">
+        <div class="weui-flex__item">
+            <a href="offlineTr_detail.html" class="returnBtn">
+                <span class="iconfont icon-xiangzuo"></span>
+                返回
+            </a>
+        </div>
+        <div class="weui-flex__item header-title">全部评论</div>
+        <div class="weui-flex__item wx-title-comment">
+            <a href="comment.html">评论</a>
+        </div>
+    </div>
+    <div class="wx-content">
+        <div class="comments-content">
+            <div class="comments-title">
+                大数据时代的税务风险管理与税收规划
+            </div>
+            <ul class="comments-box">
+                <li class="comment-item">
+                    <div class="comment-info">
+                        <span class="comment-userName">fengzhong</span>
+                        <span class="comment-time">2017-10-20 20:10:36</span>
+                    </div>
+                    <div class="comment-text">
+                        不错，讲解十分详细，收益匪浅，满意！老师很有耐心，
+                        全程活动气氛很不错，学到了以前很多不懂的！
+                    </div>
+
+                </li>
+                <li class="comment-item">
+                    <div class="comment-info">
+                        <span class="comment-userName">151****5458</span>
+                        <span class="comment-time">2017-10-20 22:16:12</span>
+                    </div>
+                    <div class="comment-text">
+                        不错，回答十分详细，收益匪浅，满意！
+                    </div>
+
+                </li>
+                <li class="comment-item">
+                    <div class="comment-info">
+                        <span class="comment-userName">fengzhong</span>
+                        <span class="comment-time">2017-10-20 20:10:36</span>
+                    </div>
+                    <div class="comment-text">
+                        不错，讲解十分详细，收益匪浅，满意！老师很有耐心，
+                        全程活动气氛很不错，学到了以前很多不懂的！
+                    </div>
+
+                </li>
+                <li class="comment-item">
+                    <div class="comment-info">
+                        <span class="comment-userName">151****5458</span>
+                        <span class="comment-time">2017-10-20 22:16:12</span>
+                    </div>
+                    <div class="comment-text">
+                        不错，回答十分详细，收益匪浅，满意！
+                    </div>
+                </li>
+                <li class="comment-item">
+                    <div class="comment-info">
+                        <span class="comment-userName">fengzhong</span>
+                        <span class="comment-time">2017-10-20 20:10:36</span>
+                    </div>
+                    <div class="comment-text">
+                        不错，讲解十分详细，收益匪浅，满意！老师很有耐心，
+                        全程活动气氛很不错，学到了以前很多不懂的！
+                    </div>
+
+                </li>
+                <li class="comment-item">
+                    <div class="comment-info">
+                        <span class="comment-userName">151****5458</span>
+                        <span class="comment-time">2017-10-20 22:16:12</span>
+                    </div>
+                    <div class="comment-text">
+                        不错，回答十分详细，收益匪浅，满意！
+                    </div>
+
+                </li>
+                <li class="comment-item">
+                    <div class="comment-info">
+                        <span class="comment-userName">fengzhong</span>
+                        <span class="comment-time">2017-10-20 20:10:36</span>
+                    </div>
+                    <div class="comment-text">
+                        不错，讲解十分详细，收益匪浅，满意！老师很有耐心，
+                        全程活动气氛很不错，学到了以前很多不懂的！
+                    </div>
+
+                </li>
+                <li class="comment-item">
+                    <div class="comment-info">
+                        <span class="comment-userName">151****5458</span>
+                        <span class="comment-time">2017-10-20 22:16:12</span>
+                    </div>
+                    <div class="comment-text">
+                        不错，回答十分详细，收益匪浅，满意！
+                    </div>
+
+                </li>
+            </ul>
+            <div class="weui-loadmore">
+                <i class="weui-loading"></i>
+                <span class="weui-loadmore__tips">正在加载</span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="../static/dist/lib/jquery-2.1.4.js"></script>
+<script src="../static/dist/lib/fastclick.js"></script>
+<script src="../static/dist/js/jquery-weui.js"></script>
+
+<script>
+    $(function() {
+        FastClick.attach(document.body);
+    });
+    var loading = false;  //状态标记
+    $(document.body).infinite().on("infinite", function() {
+        if(loading) return;
+        loading = true;
+        var moreContent='<li class="comment-item">\n' +
+            '                    <div class="comment-info">\n' +
+            '                        <span class="comment-userName">fengzhong</span>\n' +
+            '                        <span class="comment-time">2017-10-20 20:10:36</span>\n' +
+            '                    </div>\n' +
+            '                    <div class="comment-text">\n' +
+            '                        不错，讲解十分详细，收益匪浅，满意！老师很有耐心，\n' +
+            '                        全程活动气氛很不错，学到了以前很多不懂的！\n' +
+            '                    </div>\n' +
+            '\n' +
+            '                </li>\n' +
+            '                <li class="comment-item">\n' +
+            '                    <div class="comment-info">\n' +
+            '                        <span class="comment-userName">151****5458</span>\n' +
+            '                        <span class="comment-time">2017-10-20 22:16:12</span>\n' +
+            '                    </div>\n' +
+            '                    <div class="comment-text">\n' +
+            '                        不错，回答十分详细，收益匪浅，满意！\n' +
+            '                    </div>\n' +
+            '\n' +
+            '                </li>\n' +
+            '                <li class="comment-item">\n' +
+            '                    <div class="comment-info">\n' +
+            '                        <span class="comment-userName">fengzhong</span>\n' +
+            '                        <span class="comment-time">2017-10-20 20:10:36</span>\n' +
+            '                    </div>\n' +
+            '                    <div class="comment-text">\n' +
+            '                        不错，讲解十分详细，收益匪浅，满意！老师很有耐心，\n' +
+            '                        全程活动气氛很不错，学到了以前很多不懂的！\n' +
+            '                    </div>\n' +
+            '\n' +
+            '                </li>\n' +
+            '                <li class="comment-item">\n' +
+            '                    <div class="comment-info">\n' +
+            '                        <span class="comment-userName">151****5458</span>\n' +
+            '                        <span class="comment-time">2017-10-20 22:16:12</span>\n' +
+            '                    </div>\n' +
+            '                    <div class="comment-text">\n' +
+            '                        不错，回答十分详细，收益匪浅，满意！\n' +
+            '                    </div>\n' +
+            '\n' +
+            '                </li>';
+        setTimeout(function() {
+            $(".comments-box").append(moreContent);
+            loading = false;
+            //  如果你不需要滚动加载了，比如已经加载完了所有内容，调用 $(document.body).destroyInfinite() 可以销毁插件。
+        }, 500);   //模拟延迟
+    });
+</script>
+</body>
+
+</html>

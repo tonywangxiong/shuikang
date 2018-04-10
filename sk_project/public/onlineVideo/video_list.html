@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta charset="utf-8">
+    <title>在线视频列表页</title>
+    <script src="../static/js/jquery-1.11.2.min.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/btn.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/idangerous.swiper.css">
+    <script src="../static/js/idangerous.swiper.min.js"></script>
+    <script src="../static/js/bootstrap.js"></script>
+    <script src="../static/js/DD_roundies_0.0.2a-min.js"></script>
+</head>
+<body>
+<div class="sk-container">
+    <!--头部logo-->
+    <div class="header row">
+        <div class="col-xs-6">
+            <div class="sk-logo"></div>
+        </div>
+        <div class="personal-menu col-xs-6">
+            <ul>
+
+                <li class="reg-menu">
+                    <a href="../user/register.html">
+                        <span class="icon reg-icon"></span>
+                        <span>注 册</span>
+                    </a>
+                </li>
+                <li class="login-menu">
+                    <a href="../user/login.html">
+                        <span class="icon login-icon"></span>
+                        <span>登 录</span>
+                    </a>
+                </li>
+            </ul>
+            <!--<ul>-->
+            <!--<li class="quit-menu">-->
+            <!--<a href="javascript:;">-->
+            <!--<span class="icon quit-icon"></span>-->
+            <!--<span>退出</span>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--<li class="persn-menu">-->
+            <!--<a href="javascript:;">-->
+            <!--<span class="icon persn-icon"></span>-->
+            <!--<span>个人中心</span>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--<li class="welcome-user">-->
+            <!--<span>欢迎您,&nbsp;</span>-->
+            <!--<span class="userName">Tonywangxiong</span>-->
+            <!--</li>-->
+            <!--</ul>-->
+        </div>
+    </div>
+    <!--头部logo结束-->
+    <!--导航菜单-->
+    <div class="topNav row">
+        <ul class="">
+            <li class="nav-item"><a href="../index.html"><span>首页</span></a></li>
+            <li class="nav-item"><a href="../lawSearch/lawList.html"><span>法律法规</span></a></li>
+            <li class="nav-item active"><a href="video_list.html"><span>在线视频</span></a></li>
+            <li class="nav-item"><a href="../offlineTraining/offlineTr_list.html"><span>线下培训</span></a></li>
+            <li class="nav-item"><a href="../case_analysis/case_analysis_list.html"><span>案例分析</span></a></li>
+            <li class="nav-item"><a href="../taxable_school/taxable_school_list.html"><span>纳税学堂</span></a></li>
+            <li class="nav-item"><a href="../expert_consultation/expert_list.html"><span>专家问诊</span></a></li>
+        </ul>
+
+    </div>
+    <!--导航菜单结束-->
+    <!--位置-->
+    <div class="title-bar">您的当前位置 :&nbsp;<span>首页</span><span> > </span><span>在线视频</span></div>
+    <!--位置结束-->
+    <!--列表-->
+    <div class="main-content">
+        <!--视频列表-->
+        <div class="left-side-list side">
+            <div class="list-title">
+                <div class="list-title-text">
+                    <span class="title_lg">在线视频</span>
+                    <span class="title_sm">ONLINE VIDEO</span>
+                </div>
+                <div class="_search_area">
+                    <input type="text" class="searchIpt" >
+                    <button class="searchBtn1">
+                        <span class="icon_sm search_icon_white"></span>
+                        <span>搜索</span>
+                    </button>
+                </div>
+            </div>
+            <div class="list-content video-list">
+                <div class="showImg-content">
+                    <div class="online-showImg-item">
+                        <div class="item-img">
+                            <a href="video-detail-free.html">
+                                <img src="../static/images/1.png" alt="">
+                                <div class="sk-mask">
+                                    <img src="../static/images/icon/play_icon.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item-desc">
+                            <div class="item-title">
+                                <a href="video-detail-free.html"><span>小微企业税收优惠政策及研发费用扣</span></a>
+                            </div>
+                            <div class="item-bottom">
+                                <span class="viewNum">
+                                    <span class="viewNum_icon"></span>
+                                    <span class="views_count">50023</span>
+                                </span>
+                                <span class="free_icon" _data="0"></span>
+                            </div>
+                        </div>
+                        <div class="move-bar"></div>
+
+                    </div>
+                    <div class="online-showImg-item">
+                        <div class="item-img">
+                            <a href="video-pay.html">
+                                <img src="../static/images/2.png" alt="">
+                                <span class="vip_icon"></span>
+                                <div class="sk-mask">
+                                    <img src="../static/images/icon/play_icon.png" alt="">
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="item-desc">
+                            <div class="item-title">
+                                <a href="video-pay.html"><span>小微企业税收优惠政策</span></a>
+                            </div>
+                            <div class="item-bottom">
+                                <span class="viewNum">
+                                    <span class="viewNum_icon"></span>
+                                    <span class="views_count">50023</span>
+                                </span>
+                                <span class="price_bg" _data="1">￥99.00</span>
+                            </div>
+                        </div>
+                        <div class="move-bar"></div>
+                    </div>
+                    <div class="online-showImg-item">
+                        <div class="item-img">
+                            <a href="video-detail-free.html">
+                                <img src="../static/images/3.png" alt="">
+                                <div class="sk-mask">
+                                    <img src="../static/images/icon/play_icon.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item-desc">
+                            <div class="item-title">
+                                <a href="video-detail-free.html"><span>小微企业税收优惠政策及研发费用扣</span></a>
+                            </div>
+                            <div class="item-bottom">
+                                <span class="viewNum">
+                                    <span class="viewNum_icon"></span>
+                                    <span class="views_count">50023</span>
+                                </span>
+                                <span class="free_icon" _data="0"></span>
+                            </div>
+                        </div>
+                        <div class="move-bar"></div>
+
+                    </div>
+                    <div class="online-showImg-item">
+                        <div class="item-img">
+                            <a href="video-pay.html">
+                                <img src="../static/images/4.png" alt="">
+                                <span class="vip_icon"></span>
+                                <div class="sk-mask">
+                                    <img src="../static/images/icon/play_icon.png" alt="">
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="item-desc">
+                            <div class="item-title">
+                                <a href="video-pay.html"><span>小微企业税收优惠政策</span></a>
+                            </div>
+                            <div class="item-bottom">
+                                <span class="viewNum">
+                                    <span class="viewNum_icon"></span>
+                                    <span class="views_count">50023</span>
+                                </span>
+                                <span class="price_bg" _data="1">￥99.00</span>
+                            </div>
+                        </div>
+                        <div class="move-bar"></div>
+                    </div>
+                    <div class="online-showImg-item">
+                        <div class="item-img">
+                            <a href="video-detail-free.html">
+                                <img src="../static/images/5.png" alt="">
+                                <div class="sk-mask">
+                                    <img src="../static/images/icon/play_icon.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item-desc">
+                            <div class="item-title">
+                                <a href="video-detail-free.html"><span>小微企业税收优惠政策及研发费用扣</span></a>
+                            </div>
+                            <div class="item-bottom">
+                                <span class="viewNum">
+                                    <span class="viewNum_icon"></span>
+                                    <span class="views_count">50023</span>
+                                </span>
+                                <span class="free_icon" _data="0"></span>
+                            </div>
+                        </div>
+                        <div class="move-bar"></div>
+
+                    </div>
+                    <div class="online-showImg-item">
+                        <div class="item-img">
+                            <a href="video-pay.html">
+                                <img src="../static/images/6.png" alt="">
+                                <span class="vip_icon"></span>
+                                <div class="sk-mask">
+                                    <img src="../static/images/icon/play_icon.png" alt="">
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="item-desc">
+                            <div class="item-title">
+                                <a href="video-pay.html"><span>小微企业税收优惠政策</span></a>
+                            </div>
+                            <div class="item-bottom">
+                                <span class="viewNum">
+                                    <span class="viewNum_icon"></span>
+                                    <span class="views_count">50023</span>
+                                </span>
+                                <span class="price_bg" _data="1">￥99.00</span>
+                            </div>
+                        </div>
+                        <div class="move-bar"></div>
+                    </div>
+                    <div class="online-showImg-item">
+                        <div class="item-img">
+                            <a href="video-detail-free.html">
+                                <img src="../static/images/7.png" alt="">
+                                <div class="sk-mask">
+                                    <img src="../static/images/icon/play_icon.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item-desc">
+                            <div class="item-title">
+                                <a href="video-detail-free.html"><span>小微企业税收优惠政策及研发费用扣</span></a>
+                            </div>
+                            <div class="item-bottom">
+                                <span class="viewNum">
+                                    <span class="viewNum_icon"></span>
+                                    <span class="views_count">50023</span>
+                                </span>
+                                <span class="free_icon" _data="0"></span>
+                            </div>
+                        </div>
+                        <div class="move-bar"></div>
+
+                    </div>
+                    <div class="online-showImg-item">
+                        <div class="item-img">
+                            <a href="video-pay.html">
+                                <img src="../static/images/8.png" alt="">
+                                <span class="vip_icon"></span>
+                                <div class="sk-mask">
+                                    <img src="../static/images/icon/play_icon.png" alt="">
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="item-desc">
+                            <div class="item-title">
+                                <a href="video-pay.html"><span>小微企业税收优惠政策</span></a>
+                            </div>
+                            <div class="item-bottom">
+                                <span class="viewNum">
+                                    <span class="viewNum_icon"></span>
+                                    <span class="views_count">50023</span>
+                                </span>
+                                <span class="price_bg" _data="1">￥99.00</span>
+                            </div>
+                        </div>
+                        <div class="move-bar"></div>
+                    </div>
+                    <div class="online-showImg-item">
+                        <div class="item-img">
+                            <a href="video-detail-free.html">
+                                <img src="../static/images/9.png" alt="">
+                                <div class="sk-mask">
+                                    <img src="../static/images/icon/play_icon.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item-desc">
+                            <div class="item-title">
+                                <a href="video-detail-free.html"><span>小微企业税收优惠政策及研发费用扣</span></a>
+                            </div>
+                            <div class="item-bottom">
+                                <span class="viewNum">
+                                    <span class="viewNum_icon"></span>
+                                    <span class="views_count">50023</span>
+                                </span>
+                                <span class="free_icon" _data="0"></span>
+                            </div>
+                        </div>
+                        <div class="move-bar"></div>
+
+                    </div>
+                    <div class="online-showImg-item">
+                        <div class="item-img">
+                            <a href="video-pay.html">
+                                <img src="../static/images/10.png" alt="">
+                                <span class="vip_icon"></span>
+                                <div class="sk-mask">
+                                    <img src="../static/images/icon/play_icon.png" alt="">
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="item-desc">
+                            <div class="item-title">
+                                <a href="video-pay.html"><span>小微企业税收优惠政策</span></a>
+                            </div>
+                            <div class="item-bottom">
+                                <span class="viewNum">
+                                    <span class="viewNum_icon"></span>
+                                    <span class="views_count">50023</span>
+                                </span>
+                                <span class="price_bg" _data="1">￥99.00</span>
+                            </div>
+                        </div>
+                        <div class="move-bar"></div>
+                    </div>
+                    <div class="online-showImg-item">
+                        <div class="item-img">
+                            <a href="video-detail-free.html">
+                                <img src="../static/images/11.png" alt="">
+                                <div class="sk-mask">
+                                    <img src="../static/images/icon/play_icon.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item-desc">
+                            <div class="item-title">
+                                <a href="video-detail-free.html"><span>小微企业税收优惠政策及研发费用扣</span></a>
+                            </div>
+                            <div class="item-bottom">
+                                <span class="viewNum">
+                                    <span class="viewNum_icon"></span>
+                                    <span class="views_count">50023</span>
+                                </span>
+                                <span class="free_icon" _data="0"></span>
+                            </div>
+                        </div>
+                        <div class="move-bar"></div>
+
+                    </div>
+                    <div class="online-showImg-item">
+                        <div class="item-img">
+                            <a href="video-pay.html">
+                                <img src="../static/images/12.png" alt="">
+                                <span class="vip_icon"></span>
+                                <div class="sk-mask">
+                                    <img src="../static/images/icon/play_icon.png" alt="">
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="item-desc">
+                            <div class="item-title">
+                                <a href="video-pay.html"><span>小微企业税收优惠政策</span></a>
+                            </div>
+                            <div class="item-bottom">
+                                <span class="viewNum">
+                                    <span class="viewNum_icon"></span>
+                                    <span class="views_count">50023</span>
+                                </span>
+                                <span class="price_bg" _data="1">￥99.00</span>
+                            </div>
+                        </div>
+                        <div class="move-bar"></div>
+                    </div>
+                    <div class="online-showImg-item">
+                        <div class="item-img">
+                            <a href="video-detail-free.html">
+                                <img src="../static/images/1.png" alt="">
+                                <div class="sk-mask">
+                                    <img src="../static/images/icon/play_icon.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item-desc">
+                            <div class="item-title">
+                                <a href="video-detail-free.html"><span>小微企业税收优惠政策及研发费用扣</span></a>
+                            </div>
+                            <div class="item-bottom">
+                                <span class="viewNum">
+                                    <span class="viewNum_icon"></span>
+                                    <span class="views_count">50023</span>
+                                </span>
+                                <span class="free_icon" _data="0"></span>
+                            </div>
+                        </div>
+                        <div class="move-bar"></div>
+
+                    </div>
+                    <div class="online-showImg-item">
+                        <div class="item-img">
+                            <a href="video-pay.html">
+                                <img src="../static/images/2.png" alt="">
+                                <span class="vip_icon"></span>
+                                <div class="sk-mask">
+                                    <img src="../static/images/icon/play_icon.png" alt="">
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="item-desc">
+                            <div class="item-title">
+                                <a href="video-pay.html"><span>小微企业税收优惠政策</span></a>
+                            </div>
+                            <div class="item-bottom">
+                                <span class="viewNum">
+                                    <span class="viewNum_icon"></span>
+                                    <span class="views_count">50023</span>
+                                </span>
+                                <span class="price_bg" _data="1">￥99.00</span>
+                            </div>
+                        </div>
+                        <div class="move-bar"></div>
+                    </div>
+                    <div class="online-showImg-item">
+                        <div class="item-img">
+                            <a href="video-detail-free.html">
+                                <img src="../static/images/1.png" alt="">
+                                <div class="sk-mask">
+                                    <img src="../static/images/icon/play_icon.png" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item-desc">
+                            <div class="item-title">
+                                <a href="video-detail-free.html"><span>小微企业税收优惠政策及研发费用扣</span></a>
+                            </div>
+                            <div class="item-bottom">
+                                <span class="viewNum">
+                                    <span class="viewNum_icon"></span>
+                                    <span class="views_count">50023</span>
+                                </span>
+                                <span class="free_icon" _data="0"></span>
+                            </div>
+                        </div>
+                        <div class="move-bar"></div>
+
+                    </div>
+                </div>
+                <div class="my-style pagination-box">
+                    <button class="page-btn disabled" disabled>
+                        <span class="toLeft_icon">首页</span>
+                    </button>
+                    <button class="page-btn marginLeft-5">
+                        <span class="toLeft_icon"></span>
+                        <span>上一页</span>
+                    </button>
+                    <button class="page-btn marginLeft-5">
+                        <span class="toRight_icon"></span>
+                        <span>下一页</span>
+                    </button>
+                    <button class="page-btn marginLeft-5">
+                        <span class="toRight_icon">尾页</span>
+                    </button>
+                    <span class="marginLeft-5">
+                            <span>第</span><span>1</span><span>/</span><span>10</span><span>页</span>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <!--视频列表结束-->
+        <!--热门法律法规+热门线下培训-->
+        <div class="right-side side">
+            <div class="hot-onlineCl fg-pendant">
+                <div class="hot-onlineCl-title hotTitle fg-pendant-title">
+                    <span>法律法规</span>
+                </div>
+                <ul class="hot_onlineCl_content">
+                    <li class="hot_onlineCl_item">
+                        <a href="../lawSearch/fg-detail.html">
+                            <i>1</i>
+                            <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                            <span class="hot_item_viewNum">52012</span>
+                        </a>
+
+                    </li>
+                    <li class="hot_onlineCl_item">
+                        <a href="../lawSearch/fg-detail.html">
+                            <i>1</i>
+                            <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                            <span class="hot_item_viewNum">52012</span>
+                        </a>
+
+                    </li>
+                    <li class="hot_onlineCl_item">
+                        <a href="../lawSearch/fg-detail.html">
+                            <i>1</i>
+                            <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                            <span class="hot_item_viewNum">52012</span>
+                        </a>
+
+                    </li><li class="hot_onlineCl_item">
+                    <a href="../lawSearch/fg-detail.html">
+                        <i>1</i>
+                        <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                        <span class="hot_item_viewNum">52012</span>
+                    </a>
+
+                </li>
+
+
+
+                </ul>
+            </div>
+            <div class="hot-offlineTr">
+                <div class="hot-offlineTr-title hotTitle offlineTr-pendant-title">
+                    <span>线下培训</span>
+                </div>
+                <ul class="hot_offlineTr_content">
+                    <li class="hot_offlineTr_item">
+                        <a href="../offlineTraining/training_detail.html">
+                            <i>1</i>
+                            <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                        </a>
+                    </li>
+                    <li class="hot_offlineTr_item">
+                        <a href="../offlineTraining/training_detail.html">
+                            <i>1</i>
+                            <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                        </a>
+                    </li>
+                    <li class="hot_offlineTr_item">
+                        <a href="../offlineTraining/training_detail.html">
+                            <i>1</i>
+                            <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                        </a>
+                    </li>
+                    <li class="hot_offlineTr_item">
+                        <a href="../offlineTraining/training_detail.html">
+                            <i>1</i>
+                            <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                        </a>
+                    </li>
+                    <li class="hot_offlineTr_item">
+                        <a href="../offlineTraining/training_detail.html">
+                            <i>1</i>
+                            <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                        </a>
+                    </li>
+                    <li class="hot_offlineTr_item">
+                        <a href="../offlineTraining/training_detail.html">
+                            <i>1</i>
+                            <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                        </a>
+                    </li>
+                    <li class="hot_offlineTr_item">
+                        <a href="../offlineTraining/training_detail.html">
+                            <i>1</i>
+                            <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--热门法律法规+热门线下培训 结束-->
+    </div>
+    <!--页脚-->
+    <div class="footer footer-white">版权所有  Copyright      2018广东税康财税科技有限公司</div>
+    <!--页脚结束-->
+</div>
+</body>
+<script>
+    $(function () {
+        var box1=$('.showImg-content');
+        online_offline_content(box1);
+        $(window).resize(function () {
+            online_offline_content(box1);
+        });
+
+    });
+    function online_offline_content(box) {
+        if(parseInt($('.video-list').css('width'))>=1150){
+            $('.online-showImg-item').css({'margin-left':'10px'});
+            $('.online-showImg-item:nth-child(5n+1)').css({'margin-left':'0px'});
+            box.css({'width':'1150px'});
+        }else if(parseInt($('.video-list').css('width'))>=918&&parseInt($('.video-list').css('width'))<1150){
+            $('.online-showImg-item').css({'margin-left':'10px'});
+            $('.online-showImg-item:nth-child(4n+1)').css({'margin-left':'0px'});
+            box.css({'width':'918px'});
+        }else if(parseInt($('.video-list').css('width'))<918){
+            $('.online-showImg-item').css({'margin-left':'10px'});
+            $('.online-showImg-item:nth-child(3n+1)').css({'margin-left':'0px'});
+            box.css({'width':'686px'});
+        }
+    }
+</script>
+</html>

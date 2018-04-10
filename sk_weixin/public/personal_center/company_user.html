@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>个人中心,企业用户</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <link rel="stylesheet" href="../static/dist/lib/weui.min.css">
+    <link rel="stylesheet" href="../static/dist/css/jquery-weui.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/iconfont.css">
+
+</head>
+<body ontouchstart>
+<div class="wx-container">
+    <div class="wx-header weui-flex">
+        <div class="weui-flex__item">
+            <a href="personal_center.html" class="returnBtn">
+                <span class="iconfont icon-xiangzuo"></span>
+                返回
+            </a>
+        </div>
+        <div class="weui-flex__item header-title">企业用户</div>
+        <div class="weui-flex__item"> </div>
+    </div>
+    <div class="wx-content pc-content">
+        <ul class="myCompany_box">
+            <li class="myCompany-item">
+                <div class="weui-cell company-title">
+                    <span class="extend_icon collapsed" onclick="extendUser(this)"></span>
+                    广东中普网络科技有限公司
+                </div>
+                <div class="account-item">
+                    <div class="weui-cell beforeBd padding-sm">
+                        <div class="weui-cell__bd pc__hd">
+                            <p>姓名</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">王中军</div>
+                    </div>
+                    <div class="weui-cell beforeBd-none padding-sm">
+                        <div class="weui-cell__bd">
+                            <p>账号</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">
+                            tonywangxiong
+                        </div>
+                    </div>
+                    <div class="weui-cell beforeBd-none padding-sm">
+                        <div class="weui-cell__bd">
+                            <p>是否管理员</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">
+                            是
+                        </div>
+                    </div>
+                    <div class="weui-cell beforeBd-none padding-sm">
+                        <div class="weui-cell__bd">
+                            <p>绑定时间</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">
+                            2017-10-30
+                        </div>
+                    </div>
+                    <div class="button_sp_area company-ctrBtn weui-flex">
+                        <a href="javascript:;" class="weui-flex__item weui-btn weui-btn_mini unbind-btn" onclick="unbind(this)">取消绑定</a>
+                        <a href="javascript:;" class="weui-flex__item weui-btn weui-btn_mini cancelAdministrators-btn">取消管理员</a>
+                    </div>
+                </div>
+                <div  class="account-item">
+                    <div class="weui-cell beforeBd padding-sm">
+                        <div class="weui-cell__bd pc__hd">
+                            <p>姓名</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">王中海</div>
+                    </div>
+                    <div class="weui-cell beforeBd-none padding-sm">
+                        <div class="weui-cell__bd">
+                            <p>账号</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">
+                            Jack Wang
+                        </div>
+                    </div>
+                    <div class="weui-cell beforeBd-none padding-sm">
+                        <div class="weui-cell__bd">
+                            <p>是否管理员</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">
+                            否
+                        </div>
+                    </div>
+                    <div class="weui-cell beforeBd-none padding-sm">
+                        <div class="weui-cell__bd">
+                            <p>绑定时间</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">
+                            2017-10-30
+                        </div>
+                    </div>
+                    <div class="button_sp_area company-ctrBtn weui-flex">
+                        <a href="javascript:;" class="weui-flex__item weui-btn weui-btn_mini unbind-btn" onclick="unbind(this)">取消绑定</a>
+                        <a href="javascript:;" class="weui-flex__item weui-btn weui-btn_mini setAdministrators-btn">设置管理员</a>
+                    </div>
+                </div>
+
+
+            </li>
+            <li class="myCompany-item">
+                <div class="weui-cell company-title">
+                    <span class="extend_icon collapsed" onclick="extendUser(this)"></span>
+                    广东税康财税科技有限公司
+                </div>
+                <div class="account-item">
+                    <div class="weui-cell beforeBd padding-sm">
+                        <div class="weui-cell__bd pc__hd">
+                            <p>姓名</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">李云龙</div>
+                    </div>
+                    <div class="weui-cell beforeBd-none padding-sm">
+                        <div class="weui-cell__bd">
+                            <p>账号</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">
+                            Tommy Lee
+                        </div>
+                    </div>
+                    <div class="weui-cell beforeBd-none padding-sm">
+                        <div class="weui-cell__bd">
+                            <p>是否管理员</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">
+                            否
+                        </div>
+                    </div>
+                    <div class="weui-cell beforeBd-none padding-sm">
+                        <div class="weui-cell__bd">
+                            <p>绑定时间</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">
+                            2017-10-30
+                        </div>
+                    </div>
+                    <div class="button_sp_area company-ctrBtn weui-flex">
+                        <a href="javascript:;" class="weui-flex__item weui-btn weui-btn_mini unbind-btn" onclick="unbind(this)">取消绑定</a>
+                        <a href="javascript:;" class="weui-flex__item weui-btn weui-btn_mini setAdministrators-btn">设置管理员</a>
+                    </div>
+                </div>
+                <div class="account-item">
+                    <div class="weui-cell beforeBd padding-sm">
+                        <div class="weui-cell__bd pc__hd">
+                            <p>姓名</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">张三</div>
+                    </div>
+                    <div class="weui-cell beforeBd-none padding-sm">
+                        <div class="weui-cell__bd">
+                            <p>账号</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">
+                            zhangsan
+                        </div>
+                    </div>
+                    <div class="weui-cell beforeBd-none padding-sm">
+                        <div class="weui-cell__bd">
+                            <p>是否管理员</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">
+                            是
+                        </div>
+                    </div>
+                    <div class="weui-cell beforeBd-none padding-sm">
+                        <div class="weui-cell__bd">
+                            <p>绑定时间</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">
+                            2017-10-30
+                        </div>
+                    </div>
+                    <div class="button_sp_area company-ctrBtn weui-flex">
+                        <a href="javascript:;" class="weui-flex__item weui-btn weui-btn_mini unbind-btn" onclick="unbind(this)">取消绑定</a>
+                        <a href="javascript:;" class="weui-flex__item weui-btn weui-btn_mini cancelAdministrators-btn">取消管理员</a>
+                    </div>
+                </div>
+
+            </li>
+            <li class="myCompany-item">
+                <div class="weui-cell company-title">
+                    <span class="extend_icon collapsed" onclick="extendUser(this)"></span>
+                    深圳腾讯集团
+                </div>
+                <div class="account-item">
+                    <div class="weui-cell beforeBd padding-sm">
+                        <div class="weui-cell__bd pc__hd">
+                            <p>姓名</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">Nicolas</div>
+                    </div>
+                    <div class="weui-cell beforeBd-none padding-sm">
+                        <div class="weui-cell__bd">
+                            <p>账号</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">
+                            Nicolas zhaosi
+                        </div>
+                    </div>
+                    <div class="weui-cell beforeBd-none padding-sm">
+                        <div class="weui-cell__bd">
+                            <p>是否管理员</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">
+                            是
+                        </div>
+                    </div>
+                    <div class="weui-cell beforeBd-none padding-sm">
+                        <div class="weui-cell__bd">
+                            <p>绑定时间</p>
+                        </div>
+                        <div class="weui-cell__ft pc__ft">
+                            2017-10-30
+                        </div>
+                    </div>
+                    <div class="button_sp_area company-ctrBtn weui-flex">
+                        <a href="javascript:;" class="weui-flex__item weui-btn weui-btn_mini unbind-btn" onclick="unbind(this)">取消绑定</a>
+                        <a href="javascript:;" class="weui-flex__item weui-btn weui-btn_mini cancelAdministrators-btn">取消管理员</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<script src="../static/dist/lib/jquery-2.1.4.js"></script>
+<script src="../static/dist/lib/fastclick.js"></script>
+<script src="../static/dist/js/jquery-weui.js"></script>
+<script>
+    $(function() {
+        FastClick.attach(document.body);
+    });
+    function unbind(obj) {
+        $(obj).parents('.myCompany-item').remove();
+    }
+    function extendUser(obj) {
+
+        if($(obj).hasClass('collapsed')){
+            console.log('1111');
+            $(obj).parent().nextAll('.account-item').show();
+            $(obj).removeClass('collapsed');
+        }else{
+            $(obj).parent().nextAll('.account-item').hide();
+            $(obj).addClass('collapsed');
+        }
+    }
+</script>
+
+</body>
+
+</html>

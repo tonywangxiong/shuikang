@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>个人中心，新建企业</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <link rel="stylesheet" href="../static/dist/lib/weui.min.css">
+    <link rel="stylesheet" href="../static/dist/css/jquery-weui.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/iconfont.css">
+
+</head>
+<body ontouchstart>
+<div class="wx-container">
+    <div class="wx-header weui-flex">
+        <div class="weui-flex__item">
+            <a href="myCompany.html" class="returnBtn">
+                <span class="iconfont icon-xiangzuo"></span>
+                返回
+            </a>
+        </div>
+        <div class="weui-flex__item header-title">新建企业</div>
+        <div class="weui-flex__item">
+        </div>
+    </div>
+    <div class="wx-content">
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label">企业名称</label></div>
+            <div class="weui-cell__bd">
+                <input class="weui-input blueFont" type="text" placeholder="请输入企业名称">
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label">企业代号</label></div>
+            <div class="weui-cell__bd">
+                <input class="weui-input blueFont" type="text" placeholder="请输入企业代号">
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label">企业类型</label></div>
+            <div class="weui-cell__bd withIcon-toRight">
+                <input class="weui-input blueFont" type="text" id="picker-type" placeholder="请选择">
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label">所属区域</label></div>
+            <div class="weui-cell__bd withIcon-toRight">
+                <input class="weui-input blueFont" type="text" id="picker-addr" placeholder="请选择">
+            </div>
+        </div>
+    </div>
+    <!--禁用提交按钮时，请在class加上weui-btn_disabled-->
+    <a href="javascript:;" class="weui-btn weui-btn_primary wx-login-btn">提交</a>
+</div>
+
+<script src="../static/dist/lib/jquery-2.1.4.js"></script>
+<script src="../static/dist/lib/fastclick.js"></script>
+<script>
+    $(function() {
+        FastClick.attach(document.body);
+        $("#picker-type").picker({
+            title: "请选择公司规模",
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['小规模', '中小规模', '大规模', '上市公司', '集团公司']
+                }
+            ]
+        });
+        $("#picker-addr").picker({
+            title: "请选择所属区域",
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['中山', '东莞', '深圳', '广州', '佛山','珠海']
+                }
+            ]
+        });
+    });
+</script>
+<script src="../static/dist/js/jquery-weui.js"></script>
+</body>
+
+</html>

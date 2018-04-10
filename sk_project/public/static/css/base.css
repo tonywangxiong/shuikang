@@ -1,0 +1,44 @@
+body,ul,ol,li,dl,dt,dd,p,form{ margin:0; padding:0;font-family: "Microsoft YaHei,Arial Unicode MS, Arial, sans-serif" !important;font-size: small;}
+body{
+    background-color:#fafafa!important;
+    height: 100%;
+}
+html{
+    height: 100%;
+}
+table{ border-collapse:collapse;font-size:12px;}
+h1,h2,h3,h4,h5,h6,strong,th{ font-weight:normal;}
+img{ border:none;}
+ul,ol,li,dl,dt,dd{ list-style:none;}
+a:link,a:hover,a:visited,a:active{ text-decoration:none;}
+a{color:#fff;}
+header,nav,article,section,aside,footer{ display:block;}
+body{ font-family:'Microsoft YaHei'; font-size:12px;}
+.clearfix { *zoom:1}
+.clearfix:after{ content:""; display:block; clear:both;}
+.row{
+    margin: 0!important;
+}
+ul{
+    margin-bottom: 0!important;
+}
+a:hover { text-decoration: none!important; outline-style: none; color: #039bda!important;}
+/*a:hover{*/
+    /*color: #039bda!important;*/
+/*}*/
+a{text-underline: none;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
+a:link{ text-decoration:none; }
+a:visited{ text-decoration:none; }
+a:focus{ text-decoration:none; }
+.sk-container{
+    min-height:100%;
+    height: auto !important;
+    height: 100%; /*IE6不识别min-height*/
+    position: relative;
+}

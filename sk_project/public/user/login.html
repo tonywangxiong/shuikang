@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <script src="../static/js/jquery-1.11.2.min.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/btn.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <script src="../static/js/bootstrap.js"></script>
+    <script src="../static/js/DD_roundies_0.0.2a-min.js"></script>
+</head>
+<body>
+ <div class="login-container sk-container">
+     <div class="header row">
+         <div class="col-xs-5">
+             <a href="../index.html"><div class="sk-logo"></div></a>
+         </div>
+         <div class="personal-menu col-xs-7">
+             <ul>
+                 <li class="reg-title">欢迎登录</li>
+
+             </ul>
+
+         </div>
+     </div>
+     <div class="login-banner">
+         <div class="bannerBg">
+             <img src="../static/images/persnBg.png" alt="">
+         </div>
+         <div class="login-box">
+             <form action="">
+                 <div class="login-title login-item">
+                     <span>用户登录</span>
+                     <a href="register.html"><span class="regster_icon"></span>新用户注册</a>
+                 </div>
+                 <div class="login-item">
+                     <div class="iconBox">
+                         <img src="../static/images/icon/userIcon.png" alt="" class="userIcon show1">
+                         <img src="../static/images/icon/userIcon_focus.png" alt="" class="userIcon">
+
+                     </div>
+                     <input type="text" id="username" placeholder="登录名/手机号码">
+                 </div>
+                 <div class="login-item">
+                     <div class="iconBox">
+                         <img src="../static/images/icon/pswIcon.png" alt="" class="userIcon show1">
+                         <img src="../static/images/icon/pswIcon_focus.png" alt="" class="userIcon">
+
+                     </div>
+                     <input type="password" id="psw" placeholder="密码">
+                 </div>
+                 <div class="login-item">
+                     <input type="text" class="vali-code" placeholder="验证码">
+                     <img src="../static/images/valiImg.png" class="imgVali" alt="">
+                 </div>
+                 <div class="error-msg1">
+                    <span class="warning_icon"></span>
+                     <span class="error-text">账号或密码输入错误，请重新输入。</span>
+                 </div>
+                 <div class="login-item">
+                     <button class="submitBtn">登录</button>
+                 </div>
+                 <div class="forget-account">
+                     <a href="forgetUsn.html" class="forget-username">忘记账号</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                     <a href="forgetPsw.html" class="forget-psw">忘记密码</a>
+                 </div>
+
+             </form>
+         </div>
+     </div>
+     <div class="footer footer-white">版权所有  Copyright      2018广东税康财税科技有限公司</div>
+ </div>
+
+</body>
+</html>

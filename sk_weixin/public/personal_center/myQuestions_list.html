@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>个人中心，我的提问</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <link rel="stylesheet" href="../static/dist/lib/weui.min.css">
+    <link rel="stylesheet" href="../static/dist/css/jquery-weui.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/iconfont.css">
+
+</head>
+<body ontouchstart>
+<div class="wx-container">
+    <div class="wx-header weui-flex mgBt_none">
+        <div class="weui-flex__item">
+            <a href="personal_center.html" class="returnBtn">
+                <span class="iconfont icon-xiangzuo"></span>
+                返回
+            </a>
+        </div>
+        <div class="weui-flex__item header-title">我的提问</div>
+        <div class="weui-flex__item">
+        </div>
+    </div>
+    <div class="wx-content">
+        <div class="weui-search-bar" id="searchBar">
+            <form class="weui-search-bar__form">
+                <div class="weui-search-bar__box">
+                    <div class="inputArea">
+                        <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="" required="">
+                        <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+                    </div>
+                    <div class="buttonArea">
+                        <button class="searchBtn">
+                            <i class="weui-icon-search"></i>
+                            <span class="searchText">搜索</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="result_box">
+            <ul class="result-content">
+                <li class="result-item">
+                    <a href="../expert_consultation/consult_detail.html">
+                        <span class="item-title">纳税人发票年满5年后该如何处理？</span>
+                        <!--<span class="item-time">2018-02-01</span>-->
+                        <span class="huifu-status not-huifu">未回复</span>
+                    </a>
+                </li>
+                <li class="result-item">
+                    <a href="../expert_consultation/consult_detail.html">
+                        <span class="item-title">开通申报网上报税的流程是什么？需要哪些材料？</span>
+                        <span class="huifu-status not-huifu">未回复</span>
+                    </a>
+                </li>
+                <li class="result-item">
+                    <a href="../expert_consultation/consult_detail.html">
+                        <span class="item-title">相关的调整增值纳税的申报的公告</span>
+                        <span class="huifu-status huifu">已回复</span>
+                        <span class="item-time huifu-time">2018-02-01</span>
+                    </a>
+                </li>
+                <li class="result-item">
+                    <a href="../expert_consultation/consult_detail.html">
+                        <span class="item-title">关于资管产品增值税有关问题的通知
+                            相关的调整增值纳税的申报相关事项的公告</span>
+                        <span class="huifu-status huifu">已回复</span>
+                        <span class="item-time huifu-time">2018-02-01</span>
+                    </a>
+                </li>
+                <li class="result-item">
+                    <a href="../expert_consultation/consult_detail.html">
+                        <span class="item-title">相关的调整增值纳税的申报的公告</span>
+                        <span class="huifu-status huifu">已回复</span>
+                        <span class="item-time huifu-time">2018-02-01</span>
+                    </a>
+                </li>
+                <li class="result-item">
+                    <a href="../expert_consultation/consult_detail.html">
+                        <span class="item-title">关于资管产品增值税有关问题的通知
+                            相关的调整增值纳税的申报相关事项的公告</span>
+                        <span class="huifu-status huifu">已回复</span>
+                        <span class="item-time huifu-time">2018-02-01</span>
+                    </a>
+                </li>
+                <li class="result-item">
+                    <a href="../expert_consultation/consult_detail.html">
+                        <span class="item-title">相关的调整增值纳税的申报的公告</span>
+                        <span class="huifu-status huifu">已回复</span>
+                        <span class="item-time huifu-time">2018-02-01</span>
+                    </a>
+                </li>
+                <li class="result-item">
+                    <a href="../expert_consultation/consult_detail.html">
+                        <span class="item-title">关于资管产品增值税有关问题的通知
+                            相关的调整增值纳税的申报相关事项的公告</span>
+                        <span class="huifu-status huifu">已回复</span>
+                        <span class="item-time huifu-time">2018-02-01</span>
+                    </a>
+                </li>
+
+            </ul>
+            <div class="weui-loadmore">
+                <i class="weui-loading"></i>
+                <span class="weui-loadmore__tips">正在加载</span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../static/dist/lib/jquery-2.1.4.js"></script>
+<script src="../static/dist/lib/fastclick.js"></script>
+<script src="../static/dist/js/jquery-weui.js"></script>
+<script>
+    $(function() {
+        FastClick.attach(document.body);
+        if(parseInt($('.wx-container').css('height'))==$('body').height()){
+            $('.weui-loadmore').hide();
+        }else if(parseInt($('.wx-container').css('height'))>$('body').height()){
+            // $('.weui-loadmore').show();
+        }
+    });
+    $(document.body).infinite();
+    var loading = false;  //状态标记
+    $(document.body).infinite().on("infinite", function() {
+        if(loading) return;
+        loading = true;
+        var moreContent='<li class="result-item">\n' +
+            '                    <a href="../expert_consultation/consult_detail.html">\n' +
+            '                        <span class="item-title">关于资管产品增值税有关问题的通知\n' +
+            '                            相关的调整增值纳税的申报相关事项的公告</span>\n' +
+            '                        <span class="huifu-status huifu">已回复</span>\n' +
+            '                        <span class="item-time huifu-time">2018-02-01</span>\n' +
+            '                    </a>\n' +
+            '                </li>\n' +
+            '                <li class="result-item">\n' +
+            '                    <a href="../expert_consultation/consult_detail.html">\n' +
+            '                        <span class="item-title">相关的调整增值纳税的申报的公告</span>\n' +
+            '                        <span class="huifu-status huifu">已回复</span>\n' +
+            '                        <span class="item-time huifu-time">2018-02-01</span>\n' +
+            '                    </a>\n' +
+            '                </li>\n' +
+            '                <li class="result-item">\n' +
+            '                    <a href="../expert_consultation/consult_detail.html">\n' +
+            '                        <span class="item-title">关于资管产品增值税有关问题的通知\n' +
+            '                            相关的调整增值纳税的申报相关事项的公告</span>\n' +
+            '                        <span class="huifu-status huifu">已回复</span>\n' +
+            '                        <span class="item-time huifu-time">2018-02-01</span>\n' +
+            '                    </a>\n' +
+            '                </li>';
+        setTimeout(function() {
+            $(".result-content").append(moreContent);
+            loading = false;
+            //  如果你不需要滚动加载了，比如已经加载完了所有内容，调用 $(document.body).destroyInfinite() 可以销毁插件。
+        }, 500);   //模拟延迟
+    });
+</script>
+
+</body>
+
+</html>

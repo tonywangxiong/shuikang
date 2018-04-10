@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta charset="utf-8">
+    <title>在线视频支付</title>
+    <script src="../static/js/jquery-1.11.2.min.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/btn.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/idangerous.swiper.css">
+    <script src="../static/js/idangerous.swiper.min.js"></script>
+    <script src="../static/js/bootstrap.js"></script>
+    <script src="../static/js/DD_roundies_0.0.2a-min.js"></script>
+</head>
+<body>
+<div class="sk-container">
+    <!--头部logo-->
+    <div class="header row">
+        <div class="col-xs-6">
+            <div class="sk-logo"></div>
+        </div>
+        <div class="personal-menu col-xs-6">
+            <ul>
+
+                <li class="reg-menu">
+                    <a href="../user/register.html">
+                        <span class="icon reg-icon"></span>
+                        <span>注 册</span>
+                    </a>
+                </li>
+                <li class="login-menu">
+                    <a href="../user/login.html">
+                        <span class="icon login-icon"></span>
+                        <span>登 录</span>
+                    </a>
+                </li>
+            </ul>
+            <!--<ul>-->
+            <!--<li class="quit-menu">-->
+            <!--<a href="javascript:;">-->
+            <!--<span class="icon quit-icon"></span>-->
+            <!--<span>退出</span>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--<li class="persn-menu">-->
+            <!--<a href="javascript:;">-->
+            <!--<span class="icon persn-icon"></span>-->
+            <!--<span>个人中心</span>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--<li class="welcome-user">-->
+            <!--<span>欢迎您,&nbsp;</span>-->
+            <!--<span class="userName">Tonywangxiong</span>-->
+            <!--</li>-->
+            <!--</ul>-->
+        </div>
+    </div>
+    <!--头部logo结束-->
+    <!--导航菜单-->
+    <div class="topNav row">
+        <ul class="">
+            <li class="nav-item"><a href="../index.html"><span>首页</span></a></li>
+            <li class="nav-item"><a href="../lawSearch/lawList.html"><span>法规查询</span></a></li>
+            <li class="nav-item active"><a href="../onlineVideo/video_list.html"><span>在线视频</span></a></li>
+            <li class="nav-item"><a href="../offlineTraining/offlineTr_list.html"><span>线下培训</span></a></li>
+            <li class="nav-item"><a href="../case_analysis/case_analysis_list.html"><span>案例分析</span></a></li>
+            <li class="nav-item"><a href="../taxable_school/taxable_school_list.html"><span>纳税学堂</span></a></li>
+            <li class="nav-item"><a href="../expert_consultation/expert_list.html"><span>专家问诊</span></a></li>
+        </ul>
+
+    </div>
+    <!--导航菜单结束-->
+    <!--位置-->
+    <div class="title-bar">您的当前位置 :&nbsp;<span>首页</span><span> > </span><span>在线视频</span>
+        <span> > </span><span>在线支付</span>
+    </div>
+    <!--位置结束-->
+    <div class="main-content">
+        <!--课程详情-->
+        <div class="left-side-list side" style="">
+            <div class="list-title enroll-title">
+                <div class="list-title-text enroll_title_text">
+                    <span class="title_lg">在线支付</span>
+                </div>
+
+            </div>
+            <div class="list-detail video-pay">
+                <table class="tb_pay">
+                    <thead>
+                        <tr>
+                            <th width="20%">类型</th>
+                            <th width="60%">内容</th>
+                            <th width="20%">金额</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>在线课程</td>
+                            <td>小微企业税收优惠政策优惠政策要点...</td>
+                            <td><span class="tb_price">￥ 299.00</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="payMode">
+                    <div class="payMode-title">
+                        扫码支付
+                    </div>
+                    <div class="payMode-content">
+                        <div class="choose-payMode">
+                            <div class="choose-weixin">
+                                <span>
+                                    <input type="radio" value="0" name="payMode" checked="checked">
+                                </span>
+
+                                <button class="payModeBtn active">
+                                    <span class="weixin_icon"></span>
+                                    <span>微信支付</span>
+                                </button>
+                            </div>
+                            <div class="choose-zhifubao">
+                                <span>
+                                    <input type="radio" value="1" name="payMode">
+                                </span>
+
+                                <button class="payModeBtn">
+                                    <span class="zhifubao_icon"></span>
+                                    <span>支付宝支付</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="erweima-content">
+                            <img src="../static/images/weixin_erweima.jpg" alt="">
+                            <p>扫一扫，立即支付</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!--课程详情结束-->
+        <!--热门法律法规+热门线下培训-->
+        <div class="right-side side">
+            <div class="hot-onlineCl fg-pendant">
+                <div class="hot-onlineCl-title hotTitle fg-pendant-title">
+                    <span>法律法规</span>
+                </div>
+                <ul class="hot_onlineCl_content">
+                    <li class="hot_onlineCl_item">
+                        <i>1</i>
+                        <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                        <span class="hot_item_viewNum">52012</span>
+                    </li>
+                    <li class="hot_onlineCl_item">
+                        <i>2</i>
+                        <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                        <span class="hot_item_viewNum">52012</span>
+                    </li>
+
+                    <li class="hot_onlineCl_item">
+                        <i>3</i>
+                        <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                        <span class="hot_item_viewNum">52012</span>
+                    </li>
+
+                    <li class="hot_onlineCl_item">
+                        <i>4</i>
+                        <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                        <span class="hot_item_viewNum">52012</span>
+                    </li>
+
+                    <li class="hot_onlineCl_item">
+                        <i>5</i>
+                        <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                        <span class="hot_item_viewNum">52012</span>
+                    </li>
+
+                    <li class="hot_onlineCl_item">
+                        <i>6</i>
+                        <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                        <span class="hot_item_viewNum">52012</span>
+                    </li>
+
+                    <li class="hot_onlineCl_item">
+                        <i>7</i>
+                        <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                        <span class="hot_item_viewNum">52012</span>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="hot-offlineTr">
+                <div class="hot-offlineTr-title hotTitle offlineTr-pendant-title">
+                    <span>线下培训</span>
+                </div>
+                <ul class="hot_offlineTr_content">
+                    <li class="hot_offlineTr_item">
+                        <i>1</i>
+                        <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                    </li>
+                    <li class="hot_offlineTr_item">
+                        <i>2</i>
+                        <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                    </li>
+
+                    <li class="hot_offlineTr_item">
+                        <i>3</i>
+                        <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                    </li>
+
+                    <li class="hot_offlineTr_item">
+                        <i>4</i>
+                        <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                    </li>
+
+                    <li class="hot_offlineTr_item">
+                        <i>5</i>
+                        <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                    </li>
+
+                    <li class="hot_offlineTr_item">
+                        <i>6</i>
+                        <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                    </li>
+
+                    <li class="hot_offlineTr_item">
+                        <i>7</i>
+                        <span class="hot_item_title">精益生产实践IEsdfsdfsdfsdfsdf士大夫士大夫工业工程</span>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+        <!--热门法律法规+热门线下培训 结束-->
+    </div>
+    <!--页脚-->
+    <div class="footer footer-white">版权所有  Copyright      2018广东税康财税科技有限公司</div>
+    <!--页脚结束-->
+
+</div>
+
+</body>
+<script>
+    $(function () {
+        var erweima_list=['../static/images/weixin_erweima.jpg','../static/images/zhifubao_erweima.jpg'];
+        $('.payModeBtn').each(function () {
+            $(this).click(function () {
+                $('.payModeBtn').removeClass('active');
+                $(this).addClass('active');
+                $('input[name=payMode]').removeProp('checked');
+                $(this).prev().find('input[name=payMode]').prop('checked','checked');
+                $('.erweima-content').find('img').prop('src',erweima_list[$(this).index('.payModeBtn')]);
+            })
+        });
+        $('input[name=payMode]').change(function () {
+            if($(this).val()=='0'){
+                $('.payModeBtn').removeClass('active');
+                  $(this).parent().next().addClass('active');
+                $('.erweima-content').find('img').prop('src',erweima_list[0]);
+            }else if($(this).val()=='1'){
+                $('.payModeBtn').removeClass('active');
+                $(this).parent().next().addClass('active');
+                $('.erweima-content').find('img').prop('src',erweima_list[1]);
+            }
+        })
+
+    })
+</script>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta charset="utf-8">
+    <title>专家问诊,专家名片</title>
+    <script src="../static/js/jquery-1.11.2.min.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/btn.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/idangerous.swiper.css">
+    <script src="../static/js/idangerous.swiper.min.js"></script>
+    <script src="../static/js/bootstrap.js"></script>
+    <script src="../static/js/DD_roundies_0.0.2a-min.js"></script>
+</head>
+<body>
+<div class="sk-container">
+    <!--头部logo-->
+    <div class="header row">
+        <div class="col-xs-6">
+            <a href="../index.html"><div class="sk-logo"></div></a>
+        </div>
+        <div class="personal-menu col-xs-6">
+            <ul>
+
+                <li class="reg-menu">
+                    <a href="../user/register.html">
+                        <span class="icon reg-icon"></span>
+                        <span>注 册</span>
+                    </a>
+                </li>
+                <li class="login-menu">
+                    <a href="../user/login.html">
+                        <span class="icon login-icon"></span>
+                        <span>登 录</span>
+                    </a>
+                </li>
+            </ul>
+            <!--<ul>-->
+            <!--<li class="quit-menu">-->
+            <!--<a href="javascript:;">-->
+            <!--<span class="icon quit-icon"></span>-->
+            <!--<span>退出</span>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--<li class="persn-menu">-->
+            <!--<a href="javascript:;">-->
+            <!--<span class="icon persn-icon"></span>-->
+            <!--<span>个人中心</span>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--<li class="welcome-user">-->
+            <!--<span>欢迎您,&nbsp;</span>-->
+            <!--<span class="userName">Tonywangxiong</span>-->
+            <!--</li>-->
+            <!--</ul>-->
+        </div>
+    </div>
+    <!--头部logo结束-->
+    <!--导航菜单-->
+    <div class="topNav row">
+        <ul class="">
+            <li class="nav-item"><a href="../index.html"><span>首页</span></a></li>
+            <li class="nav-item"><a href="../lawSearch/lawList.html"><span>法律法规</span></a></li>
+            <li class="nav-item"><a href="../onlineVideo/video_list.html"><span>在线视频</span></a></li>
+            <li class="nav-item"><a href="../offlineTraining/offlineTr_list.html"><span>线下培训</span></a></li>
+            <li class="nav-item"><a href="../case_analysis/case_analysis_list.html"><span>案例分析</span></a></li>
+            <li class="nav-item"><a href="../taxable_school/taxable_school_list.html"><span>纳税学堂</span></a></li>
+            <li class="nav-item active"><a href="expert_list.html"><span>专家问诊</span></a></li>
+        </ul>
+
+    </div>
+    <!--导航菜单结束-->
+    <!--位置-->
+    <div class="title-bar">您的当前位置 :&nbsp;<span>首页</span><span> > </span><span>专家问诊</span><span> > </span><span>专家名片</span></div>
+    <!--位置结束-->
+    <!--列表-->
+    <div class="main-content">
+        <!--专家详情-->
+        <div class="left-side-list side">
+            <div class="list-title expert-intro-title">
+                <div class="list-title-text">
+                    <span class="title_lg">专家名片</span>
+                </div>
+
+            </div>
+            <div class="list-content expert-intro-content">
+                <div class="expert-imgBox">
+                    <img src="../static/images/expert1.png" alt="">
+                </div>
+                <div class="expert-intro-detail">
+                    <div>
+                        <span class="text20">张艾嘉</span>
+                        <span class="text16">纳税人学院专家</span>
+                    </div>
+                    <div class="intro-detail-bt">
+                        <span class="width5">来自:</span>
+                        <span class="intro-detail">纳税人商学院</span>
+                    </div>
+                    <div class="intro-detail-bt">
+                        <span class="width5">简介:</span>
+                        <span class="intro-detail">纳税人俱乐部特约讲师。毕业于南京师范大学外国语学院。
+                            曾经前往美国、墨西哥、巴西、哥伦比亚、迪拜等多个市场，
+                            参加展会，拜访买家。毕业后两年内即成功开发近10位国外买家，
+                            成交额达到近百万美元。 主要课程：《外贸客户开发技巧》
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-answer">
+                <div class="item-title">我要咨询</div>
+                <div class="ask-question-box">
+                    <div class="myQuestion">
+                        <form action="">
+                            <textarea name="" id="" cols="" rows="" placeholder="请输入您要咨询的问题"></textarea>
+
+                        </form>
+                        <div class="notLogin-textarea">
+                            <div>
+                                <a href="../user/login.html" class="toLogin-btn">登录</a>
+                            </div>
+                            <div class="notLogin-reg">
+                                <span>登录即可评论，没有账号？</span>
+                                <a href="../user/register.html">注册</a>
+                            </div>
+                        </div>
+                        <div class="ask-expert-btn">
+                            <button class="marginLeft-5 sk-askBtn disabled" disabled><span>咨询专家</span></button>
+                        </div>
+                    </div>
+                    <div class="pro-answer-content">
+                        <div class="content-title">
+                            <div>
+                                <span>全部回答</span><span>（</span><span>14</span><span>）</span>
+                            </div>
+                        </div>
+                        <div class="answer-box">
+                            <!--<div class="answer-item-box">-->
+                                <!--<div class="item-question">-->
+                                    <!--<a href="answer_detail.html">-->
+                                        <!--<span class="wen">问：</span>-->
+                                        <!--<span class="askText">纳税人发票保管满5年后该如何处理？</span>-->
+                                        <!--<span class="askTime">2017-08-25 15:30:00</span>-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div class="item-answer">-->
+                                    <!--<span class="da">答：</span>-->
+                                    <!--<span class="answerText">根据《国务院关于修改(中华人民共和国发票管理办法)的决定》(中华人民共和国国务院令第587号)第二十九条的规定：“第二十九条 开具发票的单位和个人应当按照税务机关的规定存放和保管发票，不得擅自损毁。已经开具的发票存根联和发票登记簿，应当保存5年。保存期满，报经税务机关查验后销毁。</span>-->
+                                <!--</div>-->
+
+                            <!--</div>-->
+                            <!--<div class="answer-item-box">-->
+                                <!--<div class="item-question">-->
+                                    <!--<span class="wen">问：</span>-->
+                                    <!--<span class="askText">纳税人发票保管满5年后该如何处理？</span>-->
+                                    <!--<span class="askTime">2017-08-25 15:30:00</span>-->
+                                <!--</div>-->
+                                <!--<div class="item-answer">-->
+                                    <!--<span class="da">答：</span>-->
+                                    <!--<span class="answerText">根据《国务院关于修改(中华人民共和国发票管理办法)的决定》(中华人民共和国国务院令第587号)第二十九条的规定：“第二十九条 开具发票的单位和个人应当按照税务机关的规定存放和保管发票，不得擅自损毁。已经开具的发票存根联和发票登记簿，应当保存5年。保存期满，报经税务机关查验后销毁。</span>-->
+                                <!--</div>-->
+
+                            <!--</div>-->
+                            <!--<div class="answer-item-box">-->
+                                <!--<div class="item-question">-->
+                                    <!--<span class="wen">问：</span>-->
+                                    <!--<span class="askText">纳税人发票保管满5年后该如何处理？</span>-->
+                                    <!--<span class="askTime">2017-08-25 15:30:00</span>-->
+                                <!--</div>-->
+                                <!--<div class="item-answer">-->
+                                    <!--<span class="da">答：</span>-->
+                                    <!--<span class="answerText">根据《国务院关于修改(中华人民共和国发票管理办法)的决定》(中华人民共和国国务院令第587号)第二十九条的规定：“第二十九条 开具发票的单位和个人应当按照税务机关的规定存放和保管发票，不得擅自损毁。已经开具的发票存根联和发票登记簿，应当保存5年。保存期满，报经税务机关查验后销毁。</span>-->
+                                <!--</div>-->
+
+                            <!--</div>-->
+                            <!--<div class="answer-item-box">-->
+                                <!--<div class="item-question">-->
+                                    <!--<span class="wen">问：</span>-->
+                                    <!--<span class="askText">纳税人发票保管满5年后该如何处理？</span>-->
+                                    <!--<span class="askTime">2017-08-25 15:30:00</span>-->
+                                <!--</div>-->
+                                <!--<div class="item-answer">-->
+                                    <!--<span class="da">答：</span>-->
+                                    <!--<span class="answerText">根据《国务院关于修改(中华人民共和国发票管理办法)的决定》(中华人民共和国国务院令第587号)第二十九条的规定：“第二十九条 开具发票的单位和个人应当按照税务机关的规定存放和保管发票，不得擅自损毁。已经开具的发票存根联和发票登记簿，应当保存5年。保存期满，报经税务机关查验后销毁。</span>-->
+                                <!--</div>-->
+
+                            <!--</div>-->
+                            <!--<div class="answer-item-box">-->
+                                <!--<div class="item-question">-->
+                                    <!--<span class="wen">问：</span>-->
+                                    <!--<span class="askText">纳税人发票保管满5年后该如何处理？</span>-->
+                                    <!--<span class="askTime">2017-08-25 15:30:00</span>-->
+                                <!--</div>-->
+                                <!--<div class="item-answer">-->
+                                    <!--<span class="da">答：</span>-->
+                                    <!--<span class="answerText">根据《国务院关于修改(中华人民共和国发票管理办法)的决定》(中华人民共和国国务院令第587号)第二十九条的规定：“第二十九条 开具发票的单位和个人应当按照税务机关的规定存放和保管发票，不得擅自损毁。已经开具的发票存根联和发票登记簿，应当保存5年。保存期满，报经税务机关查验后销毁。</span>-->
+                                <!--</div>-->
+
+                            <!--</div>-->
+                            <!--<div class="answer-item-box">-->
+                                <!--<div class="item-question">-->
+                                    <!--<span class="wen">问：</span>-->
+                                    <!--<span class="askText">纳税人发票保管满5年后该如何处理？</span>-->
+                                    <!--<span class="askTime">2017-08-25 15:30:00</span>-->
+                                <!--</div>-->
+                                <!--<div class="item-answer">-->
+                                    <!--<span class="da">答：</span>-->
+                                    <!--<span class="answerText">根据《国务院关于修改(中华人民共和国发票管理办法)的决定》(中华人民共和国国务院令第587号)第二十九条的规定：“第二十九条 开具发票的单位和个人应当按照税务机关的规定存放和保管发票，不得擅自损毁。已经开具的发票存根联和发票登记簿，应当保存5年。保存期满，报经税务机关查验后销毁。</span>-->
+                                <!--</div>-->
+
+                            <!--</div>-->
+                            <!--<div class="answer-item-box">-->
+                                <!--<div class="item-question">-->
+                                    <!--<span class="wen">问：</span>-->
+                                    <!--<span class="askText">纳税人发票保管满5年后该如何处理？</span>-->
+                                    <!--<span class="askTime">2017-08-25 15:30:00</span>-->
+                                <!--</div>-->
+                                <!--<div class="item-answer">-->
+                                    <!--<span class="da">答：</span>-->
+                                    <!--<span class="answerText">根据《国务院关于修改(中华人民共和国发票管理办法)的决定》(中华人民共和国国务院令第587号)第二十九条的规定：“第二十九条 开具发票的单位和个人应当按照税务机关的规定存放和保管发票，不得擅自损毁。已经开具的发票存根联和发票登记簿，应当保存5年。保存期满，报经税务机关查验后销毁。</span>-->
+                                <!--</div>-->
+
+                            <!--</div>-->
+                            <!--<div class="answer-item-box">-->
+                                <!--<div class="item-question">-->
+                                    <!--<span class="wen">问：</span>-->
+                                    <!--<span class="askText">纳税人发票保管满5年后该如何处理？</span>-->
+                                    <!--<span class="askTime">2017-08-25 15:30:00</span>-->
+                                <!--</div>-->
+                                <!--<div class="item-answer">-->
+                                    <!--<span class="da">答：</span>-->
+                                    <!--<span class="answerText">根据《国务院关于修改(中华人民共和国发票管理办法)的决定》(中华人民共和国国务院令第587号)第二十九条的规定：“第二十九条 开具发票的单位和个人应当按照税务机关的规定存放和保管发票，不得擅自损毁。已经开具的发票存根联和发票登记簿，应当保存5年。保存期满，报经税务机关查验后销毁。</span>-->
+                                <!--</div>-->
+
+                            <!--</div>-->
+                            <!--<div class="answer-item-box">-->
+                                <!--<div class="item-question">-->
+                                    <!--<span class="wen">问：</span>-->
+                                    <!--<span class="askText">纳税人发票保管满5年后该如何处理？</span>-->
+                                    <!--<span class="askTime">2017-08-25 15:30:00</span>-->
+                                <!--</div>-->
+                                <!--<div class="item-answer">-->
+                                    <!--<span class="da">答：</span>-->
+                                    <!--<span class="answerText">根据《国务院关于修改(中华人民共和国发票管理办法)的决定》(中华人民共和国国务院令第587号)第二十九条的规定：“第二十九条 开具发票的单位和个人应当按照税务机关的规定存放和保管发票，不得擅自损毁。已经开具的发票存根联和发票登记簿，应当保存5年。保存期满，报经税务机关查验后销毁。</span>-->
+                                <!--</div>-->
+
+                            <!--</div>-->
+                            <!--<div class="answer-item-box">-->
+                                <!--<div class="item-question">-->
+                                    <!--<span class="wen">问：</span>-->
+                                    <!--<span class="askText">纳税人发票保管满5年后该如何处理？</span>-->
+                                    <!--<span class="askTime">2017-08-25 15:30:00</span>-->
+                                <!--</div>-->
+                                <!--<div class="item-answer">-->
+                                    <!--<span class="da">答：</span>-->
+                                    <!--<span class="answerText">根据《国务院关于修改(中华人民共和国发票管理办法)的决定》(中华人民共和国国务院令第587号)第二十九条的规定：“第二十九条 开具发票的单位和个人应当按照税务机关的规定存放和保管发票，不得擅自损毁。已经开具的发票存根联和发票登记簿，应当保存5年。保存期满，报经税务机关查验后销毁。</span>-->
+                                <!--</div>-->
+
+                            <!--</div>-->
+                            <!--<div class="answer-item-box">-->
+                                <!--<div class="item-question">-->
+                                    <!--<span class="wen">问：</span>-->
+                                    <!--<span class="askText">纳税人发票保管满5年后该如何处理？</span>-->
+                                    <!--<span class="askTime">2017-08-25 15:30:00</span>-->
+                                <!--</div>-->
+                                <!--<div class="item-answer">-->
+                                    <!--<span class="da">答：</span>-->
+                                    <!--<span class="answerText">根据《国务院关于修改(中华人民共和国发票管理办法)的决定》(中华人民共和国国务院令第587号)第二十九条的规定：“第二十九条 开具发票的单位和个人应当按照税务机关的规定存放和保管发票，不得擅自损毁。已经开具的发票存根联和发票登记簿，应当保存5年。保存期满，报经税务机关查验后销毁。</span>-->
+                                <!--</div>-->
+
+                            <!--</div>-->
+                            <!--<div class="answer-item-box">-->
+                                <!--<div class="item-question">-->
+                                    <!--<span class="wen">问：</span>-->
+                                    <!--<span class="askText">纳税人发票保管满5年后该如何处理？</span>-->
+                                    <!--<span class="askTime">2017-08-25 15:30:00</span>-->
+                                <!--</div>-->
+                                <!--<div class="item-answer">-->
+                                    <!--<span class="da">答：</span>-->
+                                    <!--<span class="answerText">根据《国务院关于修改(中华人民共和国发票管理办法)的决定》(中华人民共和国国务院令第587号)第二十九条的规定：“第二十九条 开具发票的单位和个人应当按照税务机关的规定存放和保管发票，不得擅自损毁。已经开具的发票存根联和发票登记簿，应当保存5年。保存期满，报经税务机关查验后销毁。</span>-->
+                                <!--</div>-->
+
+                            <!--</div>-->
+                            <div class="no-data">
+                                暂无数据
+                            </div>
+                        </div>
+                        <!--<div class="my-style pagination-box">-->
+                            <!--<button class="page-btn disabled" disabled>-->
+                                <!--<span class="toLeft_icon">首页</span>-->
+                            <!--</button>-->
+                            <!--<button class="page-btn marginLeft-5">-->
+                                <!--<span class="toLeft_icon"></span>-->
+                                <!--<span>上一页</span>-->
+                            <!--</button>-->
+                            <!--<button class="page-btn marginLeft-5">-->
+                                <!--<span class="toRight_icon"></span>-->
+                                <!--<span>下一页</span>-->
+                            <!--</button>-->
+                            <!--<button class="page-btn marginLeft-5">-->
+                                <!--<span class="toRight_icon">尾页</span>-->
+                            <!--</button>-->
+                            <!--<span class="marginLeft-5">-->
+                            <!--<span>第</span><span>1</span><span>/</span><span>10</span><span>页</span>-->
+                        <!--</span>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--专家详情结束-->
+        <!--热门在线课程+热门线下培训-->
+        <div class="right-side side">
+            <div class="hot-onlineCl">
+                <div class="hot-onlineCl-title hotTitle experts-title">
+                    <span>权威专家</span>
+                </div>
+                <ul class="hot_onlineCl_content expertContent">
+                    <li class="expert-every">
+                        <div class="expertImg-box">
+                            <a href="expert_introduction.html">
+                                <img src="../static/images/expert5.png" alt="">
+                            </a>
+
+                        </div>
+                        <div class="expert-name"><a href="expert_introduction.html">程老师</a></div>
+                    </li>
+                    <li class="expert-every">
+                        <div class="expertImg-box">
+                            <a href="expert_introduction.html">
+                                <img src="../static/images/expert2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="expert-name"><a href="expert_introduction.html">王老师</a></div>
+                    </li>
+                    <li class="expert-every">
+                        <div class="expertImg-box">
+                            <a href="expert_introduction.html">
+                                <img src="../static/images/expert3.png" alt="">
+                            </a>
+                        </div>
+                        <div class="expert-name"><a href="expert_introduction.html">Tony</a></div>
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </div>
+        <!--热门在线课程+热门线下培训 结束-->
+    </div>
+    <!--页脚-->
+    <div class="footer footer-white">版权所有  Copyright      2018广东税康财税科技有限公司</div>
+    <!--页脚结束-->
+</div>
+</body>
+<script>
+
+
+    $(function () {
+        setWidth();
+        $(window).resize(function () {
+            setWidth();
+        });
+    });
+    function setWidth() {
+        var boxWidth=parseInt($('.expert-intro-content').css('width'));
+        $('.expert-intro-detail').css({'width':boxWidth-141+'px'});
+    }
+</script>
+</html>

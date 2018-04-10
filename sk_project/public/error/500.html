@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--[if lt IE 9 ]>
+    <meta http-equiv=refresh content="3; URL=http://outdatedbrowser.com/en">
+    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta charset="utf-8">
+    <title>500</title>
+    <script src="../static/js/jquery-1.11.2.min.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/btn.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <script src="../static/js/bootstrap.js"></script>
+    <script src="../static/js/DD_roundies_0.0.2a-min.js"></script>
+</head>
+<body>
+<div class="sk-container">
+    <!--头部logo-->
+    <div class="header row">
+        <div class="col-xs-6">
+            <div class="sk-logo"></div>
+        </div>
+        <div class="personal-menu col-xs-6">
+            <ul>
+
+                <li class="reg-menu">
+                    <a href="../user/register.html">
+                        <span class="icon reg-icon"></span>
+                        <span>注 册</span>
+                    </a>
+                </li>
+                <li class="login-menu">
+                    <a href="../user/login.html">
+                        <span class="icon login-icon"></span>
+                        <span>登 录</span>
+                    </a>
+                </li>
+            </ul>
+            <!--<ul>-->
+            <!--<li class="quit-menu">-->
+            <!--<a href="javascript:;">-->
+            <!--<span class="icon quit-icon"></span>-->
+            <!--<span>退出</span>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--<li class="persn-menu">-->
+            <!--<a href="javascript:;">-->
+            <!--<span class="icon persn-icon"></span>-->
+            <!--<span>个人中心</span>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--<li class="welcome-user">-->
+            <!--<span>欢迎您,&nbsp;</span>-->
+            <!--<span class="userName">Tonywangxiong</span>-->
+            <!--</li>-->
+            <!--</ul>-->
+        </div>
+    </div>
+    <!--头部logo结束-->
+    <!--导航菜单-->
+    <div class="topNav row">
+        <ul class="">
+            <li class="nav-item"><a href="../index.html"><span>首页</span></a></li>
+            <li class="nav-item"><a href="../lawSearch/lawList.html"><span>法规查询</span></a></li>
+            <li class="nav-item"><a href="../onlineVideo/video_list.html"><span>在线视频</span></a></li>
+            <li class="nav-item"><a href="../offlineTraining/offlineTr_list.html"><span>线下培训</span></a></li>
+            <li class="nav-item"><a href="../case_analysis/case_analysis_list.html"><span>案例分析</span></a></li>
+            <li class="nav-item"><a href="../taxable_school/taxable_school_list.html"><span>纳税学堂</span></a></li>
+            <li class="nav-item active"><a href="expert_list.html"><span>专家问诊</span></a></li>
+        </ul>
+
+    </div>
+    <!--导航菜单结束-->
+    <!--位置-->
+    <div class="title-bar">您的当前位置 :&nbsp;<span>首页</span><span> > </span><span>专家问诊</span><span> > </span><span>我要提问</span></div>
+    <!--位置结束-->
+    <!--列表-->
+    <div class="main-content">
+        <div class="error-main-content">
+            <img src="../static/images/500.png" alt="">
+            <div class="error-ctr">
+                <div class="error-item1">很抱歉，服务器无法解析ASP代码</div>
+                <div class="error-item2">( 错误信息500：网站拒绝显示此网页 )</div>
+                <div class="error-item3">
+                    <span id="seconds-count" class="seconds-text">5</span>
+                    <span>秒之后自动跳转到首页</span>
+                </div>
+                <div class="error-item4">
+                    <a href="../index.html" class="toHomePage-btn error-btn">回到首页</a>
+                    <a href="" class="toLastPage-btn error-btn marginLeft-30">返回上一页</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--页脚-->
+    <div class="footer footer-white">版权所有  Copyright      2018广东税康财税科技有限公司</div>
+    <!--页脚结束-->
+</div>
+</body>
+<script>
+    $(function () {
+        var seconds_count=setInterval(clock,1000);
+    });
+    function clock() {
+        if(parseInt($('#seconds-count').text())>0){
+            var seconds_text=$('#seconds-count').text();
+            $('#seconds-count').text(parseInt(seconds_text)-1);
+        }else{
+            window.location.href='../index.html';
+        }
+    }
+</script>
+</html>

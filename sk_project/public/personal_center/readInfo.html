@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta charset="utf-8">
+    <title>个人中心,查看体检资料</title>
+    <script src="../static/js/jquery-1.11.2.min.js"></script>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/btn.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/idangerous.swiper.css">
+    <script src="../static/js/idangerous.swiper.min.js"></script>
+    <script src="../static/js/bootstrap.js"></script>
+    <script src="../static/js/DD_roundies_0.0.2a-min.js"></script>
+</head>
+<body>
+<div class="sk-container">
+    <!--头部logo-->
+    <div class="header row">
+        <div class="col-xs-6">
+            <div class="sk-logo"></div>
+        </div>
+        <div class="personal-menu col-xs-6">
+            <!--<ul>-->
+
+            <!--<li class="reg-menu">-->
+            <!--<a href="../user/register.html">-->
+            <!--<span class="icon reg-icon"></span>-->
+            <!--<span>注 册</span>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--<li class="login-menu">-->
+            <!--<a href="../user/login.html">-->
+            <!--<span class="icon login-icon"></span>-->
+            <!--<span>登 录</span>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--</ul>-->
+            <ul>
+                <li class="quit-menu">
+                    <a href="javascript:;">
+                        <span class="icon quit-icon"></span>
+                        <span>退出</span>
+                    </a>
+                </li>
+                <li class="persn-menu">
+                    <a href="javascript:;">
+                        <span class="icon persn-icon"></span>
+                        <span>个人中心</span>
+                    </a>
+                </li>
+                <li class="welcome-user">
+                    <span>欢迎您,&nbsp;</span>
+                    <span class="userName">Tonywangxiong</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--头部logo结束-->
+    <!--导航菜单-->
+    <div class="topNav row">
+        <ul class="">
+            <li class="nav-item"><a href="../index.html"><span>首页</span></a></li>
+            <li class="nav-item"><a href="../lawSearch/lawList.html"><span>法规查询</span></a></li>
+            <li class="nav-item"><a href="../onlineVideo/video_list.html"><span>在线视频</span></a></li>
+            <li class="nav-item"><a href="../offlineTraining/offlineTr_list.html"><span>线下培训</span></a></li>
+            <li class="nav-item"><a href="../case_analysis/case_analysis_list.html"><span>案例分析</span></a></li>
+            <li class="nav-item"><a href="../taxable_school/taxable_school_list.html"><span>纳税学堂</span></a></li>
+            <li class="nav-item"><a href="../expert_consultation/expert_list.html"><span>专家问诊</span></a></li>
+        </ul>
+
+    </div>
+    <!--导航菜单结束-->
+    <!--位置-->
+    <div class="title-bar">您的当前位置 :&nbsp;<span>首页</span><span> > </span><span>个人中心</span>
+        <span> > </span><span>查看体检资料</span>
+    </div>
+    <!--位置结束-->
+    <div class="main-content">
+        <!--左侧个人中心的菜单栏-->
+        <div class="left-side-menu">
+            <ul>
+                <li class="menu_title"><span class="persn_icon_white"></span>&nbsp;<span>个人中心</span></li>
+                <li class="menu_item"><a href="personal_center_information.html">个人资料</a></li>
+                <li class="menu_item"><a href="personal_center_editInfo.html">修改资料</a></li>
+                <li class="menu_item"><a href="personal_center_myCompany.html">我的企业</a></li>
+                <li class="menu_item"><a href="company_user.html">企业用户</a></li>
+                <li class="menu_item"><a href="bind_confirm.html">绑定确认</a></li>
+                <li class="menu_item active"><a href="company_examination.html">体检资料</a></li>
+                <li class="menu_item"><a href="personal_center_modifyPsw.html">修改密码</a></li>
+
+            </ul>
+        </div>
+        <!--左侧个人中心的菜单栏结束-->
+        <!--个人中心个人资料-->
+        <div class="side-content">
+            <div class="myTitle">
+                <span>查看体检资料</span>
+                <a class="return-up" href="">
+                    << 返回上一页
+                </a>
+            </div>
+            <div class="side-myContent">
+                <table class="tb_information">
+                    <thead>
+                    <tr>
+                        <th style="min-width: 40px">序号</th>
+                        <th>资料名称</th>
+                        <th>文件说明</th>
+                        <th style="min-width: 100px">提交状态</th>
+                        <th style="min-width: 100px">上传时间</th>
+                        <th style="min-width: 100px">上传会员</th>
+                        <th style="">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><a title="下载此模板" class="info_model" href="">《增值税纳税申报表（一般纳税人）》《增值税纳税申报表》<span class="download_icon"></span></a></td>
+                        <td>适用一般纳税人/小规模纳税人</td>
+                        <td>已提交</td>
+                        <td>2017-06-30</td>
+                        <td>小张</td>
+                        <td><a title="下载" class="info_upload" href="">《增值税纳税申报表（一般纳税人）》《增值税纳税申报表》<span class="download_icon"></span></a>
+                            <span class="del_icon" title="删除"></span>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a title="下载此模板" class="info_model" href="">《中华人民共和国企业所得税年度纳税申报表》<span class="download_icon"></span></a></td>
+                        <td>适用于查账征收企业</td>
+                        <td>已提交</td>
+                        <td>2017-06-30</td>
+                        <td>老王</td>
+                        <td><a title="下载" class="info_upload" href="">《中华人民共和国企业所得税年度纳税申报表》<span class="download_icon"></span></a>
+                            <span title="删除" class="del_icon"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a title="下载此模板" class="info_model" href="">《中华人民共和国企业所得税月（季）度预缴和年度纳税申报表（B类，2015年版）（核定征收企业适用）》<span class="download_icon"></span></a></td>
+                        <td>适用于核定征收企业</td>
+                        <td>已提交</td>
+                        <td>2017-06-30</td>
+                        <td>老李</td>
+                        <td><a title="下载" class="info_upload" href="">《增值税纳税申报表（一般纳税人）》《增值税纳税申报表》<span class="download_icon"></span></a>
+                            <span title="删除" class="del_icon"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a class="info_model" href="">《中华人民共和国企业年度关联业务往来报告表》<span class="download_icon"></span></a></td>
+                        <td>非必须上报资料，企业需要报送税务机关关联交易报告表时再上传</td>
+                        <td>未提交</td>
+                        <td>-</td>
+                        <td>小明</td>
+                        <td>
+                            <a class="uploadBtn ctr-btn" href="">上传</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a class="info_model" href="">《中华人民共和国企业年度关联业务往来报告表》<span class="download_icon"></span></a></td>
+                        <td>非必须上报资料，企业需要报送税务机关关联交易报告表时再上传</td>
+                        <td>未提交</td>
+                        <td>-</td>
+                        <td>小明</td>
+                        <td>
+                            <a class="uploadBtn ctr-btn" href="">上传</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a class="info_model" href="">《中华人民共和国企业年度关联业务往来报告表》<span class="download_icon"></span></a></td>
+                        <td>非必须上报资料，企业需要报送税务机关关联交易报告表时再上传</td>
+                        <td>未提交</td>
+                        <td>-</td>
+                        <td>小明</td>
+                        <td>
+                            <a class="uploadBtn ctr-btn" href="">上传</a>
+                        </td>
+                    </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            <div class="reportBtn">
+                <button class="report-btn"><span>生成报告</span></button>
+            </div>
+
+        </div>
+        <!--个人中心个人资料结束-->
+    </div>
+    <!--页脚-->
+    <div class="footer footer-white">版权所有  Copyright      2018广东税康财税科技有限公司</div>
+    <!--页脚结束-->
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>个人中心，绑定企业二维码</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description"
+          content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <link rel="stylesheet" href="../static/dist/lib/weui.min.css">
+    <link rel="stylesheet" href="../static/dist/css/jquery-weui.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body ontouchstart>
+<div class="wx-container whitePage">
+    <div class="wx-header weui-flex mgBt_none">
+        <div class="weui-flex__item">
+            <a href="myCompany.html" class="returnBtn">
+                <span class="iconfont icon-xiangzuo"></span>
+                返回
+            </a>
+        </div>
+        <div class="weui-flex__item header-title">绑定企业二维码</div>
+        <div class="weui-flex__item"></div>
+    </div>
+    <div class="wx-content qrcode-content">
+        <div class="">
+            操作说明
+        </div>
+
+        <ul>
+            <li>1、按照字母或数字等顺序排列的列表项目.</li>
+            <li>2、value1表示有序列表项目符号的类型, value2表示项目开始的数值. start是编号开始的数字，如start=2则编号从2开始.</li>
+            <li>3、那这就可以解决问题了，如果event.cancelable=false，是什么意思？不让开发者主动去禁用么</li>
+        </ul>
+        <div class="qr-code-content">
+            <div class="qrcode-title">
+                <img src="../static/images/qrcode-title.png" alt="">
+            </div>
+            <div class="qrcode-area">
+                <div class="qrcode-item">
+                    <a href="javascript:;"><img src="../static/images/erweima1.jpg" alt=""></a>
+                    <p>税康公众号</p>
+                </div>
+                <div class="qrcode-item">
+                    <a href="javascript:;"><img src="../static/images/erweima2.jpg" alt=""></a>
+                    <p>腾讯公司公众号</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+<script src="../static/dist/lib/jquery-2.1.4.js"></script>
+<script src="../static/dist/lib/fastclick.js"></script>
+<script src="../static/dist/js/jquery-weui.js"></script>
+<script>
+    $(function () {
+        FastClick.attach(document.body);
+        $('.qrcode-item').on('touchstart',function () {
+            $(this).siblings().hide();
+        })
+        $('.qrcode-item').on('touchend',function () {
+            $(this).siblings().show();
+        })
+    });
+</script>
+
+</body>
+
+</html>

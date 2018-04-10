@@ -1,0 +1,11 @@
+{"total":9,"rows":[
+  {"id":1,"company_name":"广东中普科技有限公司","company_code":"00032125-001","company_type":"中小规模","company_date":"2017-01-30","company_ctr":"<a href='create_company.html' class='bindBtn ctr-btn'>编辑</a>","iconCls":"icon-ok"},
+  {"id":11,"company_name":"广东中普科技有限公司","company_code":"00032125-001","company_type":"中小规模","company_date":"2017-01-30","company_ctr":"<a href='create_company.html' class='bindBtn ctr-btn'>编辑</a>","_parentId":1},
+  {"id":12,"tabName":"Canon","caozuo":"修改，删除","_parentId":1},
+  {"id":13,"tabName":"Egbert","caozuo":"修改，删除","_parentId":1},
+  {"id":2,"tabName":"Washington","iconCls":"icon-ok"},
+  {"id":21,"tabName":"Bellingham","caozuo":"修改，删除","_parentId":2},
+  {"id":22,"tabName":"Chehalis","caozuo":"修改，删除","_parentId":2},
+  {"id":23,"tabName":"Ellensburg","caozuo":"修改，删除","_parentId":2},
+  {"id":24,"tabName":"Monroe","caozuo":"修改，删除","_parentId":2}
+]}

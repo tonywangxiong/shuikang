@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>个人中心,升级续费</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
+    <link rel="stylesheet" href="../static/dist/lib/weui.min.css">
+    <link rel="stylesheet" href="../static/dist/css/jquery-weui.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/iconfont.css">
+
+</head>
+<body ontouchstart>
+<div class="wx-container">
+    <div class="wx-header weui-flex">
+        <div class="weui-flex__item">
+            <a href="myCompany.html" class="returnBtn">
+                <span class="iconfont icon-xiangzuo"></span>
+                返回
+            </a>
+        </div>
+        <div class="weui-flex__item header-title">升级续费</div>
+        <div class="weui-flex__item">
+        </div>
+    </div>
+    <div class="wx-content pc-content">
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">费用</label>
+            </div>
+            <div class="weui-cell__bd pc__ft">120元/月</div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label">付费时长</label></div>
+            <div class="weui-cell__bd withIcon-toRight">
+                <input class="weui-input blueFont" type="text" id="picker-months" placeholder="请选择">
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">服务说明</label>
+            </div>
+            <div class="weui-cell__bd pc__ft">
+                <span>1、提供专家诊断1次<br>
+                    2、年度用户每年有财务风险控制专家培训3次
+                </span>
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">应付金额</label>
+            </div>
+            <div class="weui-cell__bd pc__ft">360.00元</div>
+        </div>
+        <div class="weui-cells weui-cells_radio">
+            <label class="weui-cell weui-check__label" for="x11">
+                <div class="weui-cell__bd">
+                    <p>
+                        <span class="icon-weixinzhifu iconfont"></span>
+                        <span class="wxzf-text">微信支付</span>
+                    </p>
+                </div>
+                <div class="weui-cell__ft">
+                    <input type="radio" class="weui-check" name="radio1" id="x11" checked="checked">
+                    <span class="weui-icon-checked"></span>
+                </div>
+            </label>
+            <label class="weui-cell weui-check__label" for="x12">
+
+                <div class="weui-cell__bd">
+                    <p>
+                        <span class="icon-zhifubaozhifu iconfont"></span>
+                        <span class="zfbzf-text">支付宝支付</span>
+                    </p>
+                </div>
+                <div class="weui-cell__ft">
+                    <input type="radio" name="radio1" class="weui-check" id="x12">
+                    <span class="weui-icon-checked"></span>
+                </div>
+            </label>
+        </div>
+    </div>
+    <footer class="footer-pay">
+        <div class="footer-price">
+            <span>实付款:</span>
+            <span class="price-jine">￥360.00</span>
+        </div>
+        <a href="http://www.baidu.com" class="weui-btn weui-btn_primary wx-login-btn">立即支付</a>
+    </footer>
+
+</div>
+
+<script src="../static/dist/lib/jquery-2.1.4.js"></script>
+<script src="../static/dist/lib/fastclick.js"></script>
+<script src="../static/dist/js/jquery-weui.js"></script>
+<script>
+    $(function() {
+        FastClick.attach(document.body);
+        $("#picker-months").picker({
+            title: "请选择付费时长",
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['一个月', '三个月', '六个月', '一年', '两年']
+                }
+            ]
+        });
+    });
+</script>
+</body>
+
+</html>
