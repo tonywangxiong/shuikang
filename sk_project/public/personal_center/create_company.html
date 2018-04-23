@@ -15,6 +15,7 @@
     <script src="../static/js/idangerous.swiper.min.js"></script>
     <script src="../static/js/bootstrap.js"></script>
     <script src="../static/js/DD_roundies_0.0.2a-min.js"></script>
+
 </head>
 <body>
 <div class="sk-container">
@@ -142,13 +143,12 @@
                         <!--所属地区选择-->
                         <div class="form-item">
                             <label for="area">所属地区</label>
-                            <select name="area" id="area">
-                                <option value="0">请选择</option>
-                                <option value="1">广州市</option>
-                                <option value="2">中山市</option>
-                                <option value="3">珠海市</option>
-                                <option value="4">东莞市</option>
-                            </select>
+                            <div id="distpicker1">
+                                <select></select>
+                                <select></select>
+                                <select></select>
+                            </div>
+
                         </div>
                         <!--所属地区选择结束-->
                         <!--错误提示-->
@@ -159,8 +159,6 @@
                         <div class="form-item submitPart">
                             <button class="submitBtn">确定</button>
                         </div>
-
-
                         <!--<div class="form-item submitPart">-->
                         <!--<button class="submitBtn disabled" disabled>确定</button>-->
                         <!--</div>-->
@@ -176,7 +174,16 @@
     <!--页脚结束-->
 
 </div>
-
+<script src="../static/js/distpicker.data.js"></script>
+<script src="../static/js/distpicker.js"></script>
+<script>
+    $('#distpicker1').distpicker({
+        province: "广东省",
+        city: "中山市",
+        district: "大涌镇"
+    });
+</script>
 </body>
+
 
 </html>

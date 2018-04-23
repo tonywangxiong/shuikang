@@ -2016,11 +2016,16 @@
     vertical-align: middle;
 }
 .select_company select{
-    width: 50%;
     height: 28px;
     border: solid 1px #0674c3;
     padding: 2px 10px;
     vertical-align: middle;
+}
+.select_company .chooseYear{
+    width: 10%;
+}
+.select_company .my_company{
+    width: 30%;
 }
 .marginLeft-10{
     margin-left: 10px!important;
@@ -2714,3 +2719,14 @@ border: none;
     font-size: 18px;
 }
 /*暂无数据结束*/
+#distpicker1{
+    width: 350px;
+    overflow: hidden;
+}
+#distpicker1 select{
+    width: 110px;
+    float:left;
+}
+#distpicker1 select:nth-child(n+2){
+    margin-left: 10px;
+}
