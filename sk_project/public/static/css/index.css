@@ -226,6 +226,13 @@
     border-bottom: dotted 1px #dbf0ff;
     font-size: 14px;
 }
+.aside-item .content-article a{
+    display: inline-block;
+    width: 90%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
 .readMore{
     text-align: center;
     font-size: 12px;
